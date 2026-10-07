@@ -12,18 +12,31 @@ responsibilities and usable meaning rather than headings or keyword matches.
 | Time | Default/explicit/historical windows, endpoints, vintages, updates and forward horizons resolved |
 | Evidence | Broad scan, original sources, expectations, chronology, counterevidence and uncertainty |
 | Data meaning | Market-specific sample/unit/flow/stock/return distinctions usable |
-| Depth | Operating delivery, pricing, market mechanisms and cadence responsibilities represented |
+| Depth | Main cadence jobs visibly develop independent judgments; operating delivery and valuation retain their own evidence and questions |
+| Research selection | Observations distinguish competing explanations; depth follows materiality, changed evidence and validation horizon |
+| Deliverable clarity | Report responsibilities, priorities and synthesis are explicit; major jobs remain identifiable after reorganization |
 | Outlook | Earlier questions drive judgment, mechanism, new evidence/horizon; real prior reports govern scoring |
 | Delivery | Complete self-contained prompt; sourcing/format/length and missing-data treatment |
 | Generative value | Task-specific synthesis; affirmative instructions; less repetition with retained depth |
 
 For controls, read the matching file under `../assets/prompts/`. Compare omitted,
-preserved and improved responsibilities with passage evidence. A missing material
-obligation triggers revision even if the candidate is shorter. Retain drafts and
+preserved and improved responsibilities with passage evidence. Compare how well
+each prompt guides evidence selection, analytical priority and an assessable final
+report. A keyword or metric list alone carries less guidance than a developed
+research question. Missing duties or materially weaker execution guidance trigger
+revision even if the candidate is shorter. Retain drafts and
 reviews in the requested test destination, separate from controls. Revise the
 smallest responsible reference/instruction and regenerate affected cases; shared
-changes warrant related-market/cadence checks. Stop local iteration when material
-losses are resolved and further edits offer only stylistic churn. Record uncertainties.
+changes warrant related-market/cadence checks. Accept the candidate when coverage,
+depth, priority visibility, evidence selection and delivery clarity are at least
+comparable to the control. Resolve material deficits before stopping; record the
+passages and remaining uncertainties. Brevity and maintenance value are secondary
+benefits assessed after this quality floor.
+
+Recheck repaired text against the user request and the design criteria. Comparable
+research priorities and validation evidence may use task-appropriate selection
+instead of a control's fixed item counts. Express repaired safeguards as eligible
+information, required evidence and correct measurement, preserving affirmative tasks.
 
 Generation tests demonstrate prompt usability and semantic coverage. Research
 quality is a separate comparison: execute candidate/control with matched market,

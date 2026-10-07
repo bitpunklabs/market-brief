@@ -33,7 +33,9 @@ uses methodology-disclosed providers and stated coverage.
   State uncertainty and vintage of wallet/entity labels used for attribution.
 - Open interest distinguishes contracts/coins, USD notional, price revaluation and
   provider one-/two-sided counting. Verify settled/predicted funding, settlement
-  interval and normalization. Separate perpetual funding, dated basis, options
+  interval and aggregation; normalize comparisons to a common disclosed time basis,
+  distinguishing observed payments from annualized extrapolation.
+  Separate perpetual funding, dated basis, options
   premium/notional, tenor and volatility/skew convention. Liquidation notional
   measures contracts closed; cash losses need separate evidence. Depth specifies
   venue/price band/time. Hidden positions and directional attribution need evidence.
@@ -68,6 +70,14 @@ compute/storage/AI/DePIN, consumer/gaming/NFT and speculative assets. Select mat
 themes with actual token exposure, including weak/unchanged areas. Separate
 beneficiaries, suppliers, users/cost bearers, competitors and tokenless activities.
 Daily depth follows changes; monthly centers adoption, holder economics and supply.
+
+Monthly adoption/holder economics and valuation/embedded expectations each need
+distinct, visible analysis. Test demand quality as broad/concentrated, sustained/
+episodic and externally funded/internal rotation. Research risks in infrastructure
+and shared dependencies separately from headline leverage. Weekly theme judgments
+state which economics support persistence and which catalysts await delivery.
+Daily observations prioritize discrimination among spot demand, leverage, unwinding
+and temporary shocks; cross-assets deepen when they materially test the thesis.
 
 Cross-assets test growth/inflation/policy/liquidity/risk mechanisms with matched
 live/stale windows. Monthly analysis compares beginning/end macro and policy

@@ -52,6 +52,12 @@ Distinguish year-over-year/sequential and adjusted/unadjusted measures, with bas
 effects, reference periods and revision vintages stated.
 Simple yield comparisons are limited risk-premium diagnostics.
 
+Monthly earnings-cycle and valuation analysis are separately visible priorities.
+Each develops its own economic judgment and unresolved question before synthesis.
+Use the same forecast year or compatible horizons to assess revisions. Weekly
+sector comparisons identify persistent earnings support, pending delivery and
+reasons to change research priority.
+
 Subscriptions, trading, AUM revaluation, holdings and institutional disclosures
 retain separate meanings/dates. Verify reference/release/transaction dates and lags
 for 13F/CFTC/options/flows. Position direction and dealer/CTA/short-covering
