@@ -7,7 +7,7 @@ The central questions are: What is the market repricing, which gaps between expe
 [I. Timing and Research Scope]
 
 1. Determine the trading date using the America/New_York time zone, and include Beijing time as a secondary reference for important events.
-   Verify the exchange calendar, daylight saving time, and early-close arrangements. Do not assume a fixed conversion to Beijing time.
+   Verify exchange calendars, daylight saving and early closes, then derive the corresponding Beijing times.
 
 2. If no date is specified, analyze the next U.S. trading day whose regular session has not yet begun.
    If the target opening is still some time away, label the report an "early edition" and identify the periods not yet covered.
@@ -29,13 +29,13 @@ The central questions are: What is the market repricing, which gaps between expe
    Use specialist news media to identify leads and supplement background context.
 
 2. Analyze actual results relative to pre-release expectations, previous readings, revisions, and the company's prior guidance.
-   Cite the source of consensus expectations. Do not describe a result as "above expectations" without reliable expectations data.
+   Cite the source of consensus expectations. Use a reliable sourced expectations comparator; otherwise label the available prior state.
    Keep earnings comparisons consistent in fiscal quarter, currency, GAAP/non-GAAP basis, and other relevant definitions.
 
 3. Analyze each important change along the following chain:
    New fact → gap versus expectations → implications for growth, earnings, discount rates, or risk premia → price reaction so far → questions requiring validation.
 
-4. Do not mechanically apply fixed conclusions such as "rate cuts are bullish for equities" or "falling yields are bullish for technology stocks."
+4. Explain policy/yield causes and the transmission to growth, earnings, discount rates and risk premia.
    Explain why the change occurred and whether the market is currently more focused on growth, inflation, policy, or earnings.
 
 5. Search for both supporting and opposing evidence.
@@ -55,7 +55,7 @@ In approximately 200 Chinese characters, answer:
 - Should attention focus on broad-based risk-taking, a rally concentrated in a few index heavyweights, sector rotation, defensiveness, or confirmation following an event?
 
 ## 2. Key Overnight and Premarket News
-Select 5–8 important events; do not pad the list if fewer qualify.
+Select about 5–8 events, adjusting the count to material evidence.
 For each event, explain:
 The time it first became public, the core facts, pre-release expectations, the gap versus expectations, the transmission mechanism, the price reaction so far, and what remains unconfirmed.
 
@@ -65,7 +65,7 @@ Company-specific events;
 Earnings reports with sector-wide spillovers;
 News with only a short-lived sentiment impact.
 
-Do not equate the size of a premarket price move with the importance of the event.
+Rank events by economic exposure, expectation changes and pricing implications.
 
 ## 3. Macro, Interest Rates, and Cross-Asset Analysis
 Examine the following according to their actual relevance:
@@ -83,8 +83,8 @@ Focus on the following questions:
 - Which unusual combinations or divergences are present?
 - How do global developments affect U.S. companies' revenue, costs, competitive positions, or valuations?
 
-Distinguish spot VIX from VIX futures. Do not treat bond ETF prices as direct measures of credit spreads.
-Without evidence, do not present another asset's price move as a definitive leading signal for U.S. equities.
+Distinguish spot VIX, VIX futures, bond ETF returns and directly measured credit spreads.
+Use cross-assets to test a specific shared mechanism, with confidence proportional to the supporting evidence.
 
 ## 4. Earnings and Company Events
 Prioritize companies with a clear impact on indices, industry fundamentals, or supply chains.
@@ -102,7 +102,7 @@ Buyback authorization from actual execution;
 Press-release information from conference-call information;
 Benefits to the company itself from the differing effects on suppliers, customers, and competitors.
 
-Timestamp premarket or after-hours price reactions. Do not treat them as already confirmed during regular trading.
+Timestamp extended-session reactions; regular-session confirmation is a subsequent observation.
 
 ## 5. Sector, Theme, and Style Watch
 First scan the major sectors broadly, then examine important subsectors and cross-sector themes.
@@ -115,7 +115,7 @@ Continued strength, continued weakness, incremental improvement, defensiveness, 
 The table should include:
 Area | Key drivers | Recent condition and new developments | Representative securities or ETFs | Key unresolved question | Main counterevidence.
 
-Do not use a handful of large technology stocks to represent the entire market.
+Use a disclosed broad sample to separate heavyweight performance from the wider market.
 Within each theme, distinguish direct earnings beneficiaries, suppliers, companies bearing the costs, and competitors that may be disadvantaged.
 
 ## 6. Today's Event Calendar
@@ -129,19 +129,18 @@ What outcome could create a meaningful gap versus expectations?
 Why might the same outcome produce different reactions under different market conditions?
 
 ## 7. Outlook and the Questions That Matter
-Develop the outlook around the few fundamental questions raised earlier that could materially change pricing. State the assessment currently best supported by evidence, whether it concerns the broad market, a sector, a theme, or specific companies. Explain the earnings, demand, policy, financing, or valuation mechanism rather than covering every direction in a fixed bullish/neutral/bearish grid.
 
-Discuss what remains unresolved, which expectations may persist or need revision, and which disclosures or operating developments deserve attention next. Specify the relevant subject and event window or horizon because they matter to the thesis, not because every edition needs an opening, midday, or late-session checklist. Use market reactions only to assess how fundamental expectations are being priced.
+Develop the outlook around the fundamental questions raised earlier that could materially change pricing. State the assessment currently best supported by evidence for the broad market, a sector, a theme, or specific companies. Explain the earnings, demand, policy, financing, or valuation mechanism.
 
-Work material assumptions, counterevidence, and reasons to revise the view naturally into the discussion. Develop an alternative explanation only when it would meaningfully change the assessment; do not require identical trigger/confirmation/invalidation fields for every issue. If the thesis is unchanged, identify the new evidence and outstanding question rather than repeating generic daily observations or inventing a new forecast.
+Discuss which expectations may persist or need revision and which disclosures or operating developments deserve attention next. Identify the subject, relevant event window, and horizon. Use market reactions to assess how fundamental expectations are being priced.
 
-Do not assign uncalibrated probabilities or extrapolate premarket moves directly to the close.
+Integrate material assumptions, counterevidence, competing explanations, and reasons to revise naturally into the relevant discussion. For an unchanged thesis, retain its logic and horizon and update the new evidence and outstanding question. Match the precision of the assessment to the evidence.
 
 ## 8. Risks and Final Watchlist
 Identify the most important risks related to earnings, macroeconomic events, price gaps, financing and dilution, liquidity, and concentrated exposure to correlated assets.
 
 For options, positioning, or trading-related factors:
-Without reliable data, do not invent dealer gamma, CTA buying or selling estimates, institutional positions, or the value of short covering.
+Support dealer/CTA/institutional-position/short-covering attribution with verified data and stated limits.
 Options volume and open interest cannot be directly equated with clear directional bets.
 
 Conclude with:
@@ -153,36 +152,15 @@ The risk most likely to overturn the current assessment.
 
 - Write in Chinese, retaining necessary English ticker symbols and identifiers. Target approximately 2,000–3,000 Chinese characters for the main text.
 - Cite sources close to key facts, figures, and important assessments, prioritizing original materials.
-- Clearly disclose missing real-time data, complete the verifiable portions, and do not fabricate numbers.
-- If web access is unavailable, do not use training-memory information to masquerade as real-time research.
-- Do not ask me to provide a stock universe, market data files, or historical reports.
-- Avoid repetitive news, generic macro commentary, and unsupported conclusions expressed with certainty.
+- Disclose material missing data and complete verifiable work using retrieved inputs.
+- Without browsing, state the limitation and the verifiable non-current scope.
+- Select and disclose the available market universe; user materials add context.
+- Develop concise, evidence-based analysis with confidence appropriate to the facts.
 
 [Markdown and Formatting Rules]
 
-1. Use only standard Markdown in the final response. Do not output internal tool fields, search placeholders, debug text, or incomplete rich-media syntax, such as navlist, turnXsearchY, or explanations of tool output.
-
-2. Keep Markdown simple:
-   - Use `#` for the report title and `##` for main sections. As a rule, do not add deeper heading levels.
-   - Apart from headings and necessary tables, use ordinary paragraphs by default.
-   - Do not use bold, italics, blockquotes, code blocks, HTML, or decorative separators unless the content genuinely requires them.
-   - Use bullets or numbering only for short lists, issue-specific observations, event calendars, or final watch items. Prefer paragraphs whenever they work, and do not use nested lists.
-
-3. Use tables only when this prompt explicitly requires them or when they materially improve readability:
-   - Leave one blank line before and after each table. Use one record per row, with no line breaks or nested lists inside cells.
-   - Keep cells brief, prioritizing keywords and conclusions rather than long paragraphs.
-   - Avoid the vertical-bar character `|` within cell text. Use commas, slashes, or semicolons as separators instead.
-   - Do not stack multiple web links or complex citation components inside table cells. If citations interfere with table rendering, provide the relevant sources in corresponding paragraphs after the table.
-
-4. Keep sourcing and citations robust:
-   - Place sources close to key figures, news facts, and important assessments.
-   - Prefer source citations that the platform can render correctly. Do not manually construct Markdown hyperlinks by default; use ordinary links only when normal citations cannot be generated.
-   - Place citations after complete sentences, paragraphs, or table-related explanations. Do not embed citations in headings, bold syntax, or other Markdown markup.
-   - Do not output standalone, empty, or unfinished placeholder sections such as "Sources," "URLs," or "navlist."
-
-5. Prioritize readability in the main text:
-   - A paragraph should usually contain 2–5 sentences and address one core idea.
-   - When additional structure is useful, use inline labels such as "Base case:", "Confirmation conditions:", or "Main counterevidence:" rather than adding a heading for every minor point.
-   - As a rule, explain each fact fully only once. If it appears again in another section, refer back to the existing conclusion rather than repeating the explanation.
-
-6. If Markdown readability conflicts with completeness, prioritize completeness while still choosing the simplest and most reliable format.
+1. Use standard Markdown, one # title and ## main sections, with natural paragraphs.
+2. Use compact tables for substantive comparisons: blank lines around tables, one record per row, brief cells and comma/slash separators; dense sources go in adjacent prose.
+3. Cite material facts, numbers and judgment evidence nearby, using supported citations or readable source links after complete sentences or paragraphs.
+4. Develop one idea per paragraph, with short lists for observations, calendars and final priorities. Explain each fact once and develop its implications later.
+5. Prioritize substantive completeness and readable, stable formatting.
