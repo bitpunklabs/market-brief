@@ -73,7 +73,7 @@ Produce one integrated daily report combining retrospective attribution and subs
 State the 24-hour review window, market-data endpoint, news cutoff, and forward horizon in UTC and Beijing time, together with only the limitations that materially affect the assessment.
 
 ## 1. Today's Core Conclusions
-In approximately 200 Chinese characters, answer:
+In approximately 120 words, answer:
 What primarily drove repricing: macro conditions, spot demand, leverage, supply, protocol developments, or a few asset-specific events?
 What were the 3–5 most consequential changes?
 Did BTC/ETH performance agree with broader participation?
@@ -153,7 +153,7 @@ Advance the earlier analysis through concise research priorities and specific co
 
 [IV. Writing Requirements]
 
-Write in Chinese, retaining necessary English tickers and identifiers. Target approximately 2,000–3,000 Chinese characters for the main text.
+Write in English, retaining necessary tickers and identifiers. Target approximately 1,200–1,800 words for the main text.
 Integrate retrospective evidence with a substantive, issue-specific forward outlook in one report.
 Keep background brief. Daily research should privilege material new information and immediate validation over exhaustive sector catalogues or slow-moving valuation essays.
 End with one sentence answering: “What did the past 24 hours change, and what most needs confirmation over the next 24–72 hours?”

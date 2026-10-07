@@ -52,7 +52,7 @@ The priority is not to describe "how much prices rose," but to explain where ret
 State the regular-session market-data cutoff and news cutoff in both U.S. Eastern and Beijing time, along with important data gaps.
 
 ## 1. Today's Core Conclusions
-In approximately 200 Chinese characters, answer:
+In approximately 120 words, answer:
 - Was today's trading mainly about growth, inflation, interest rates, earnings, risk appetite, or events involving a few companies?
 - Did index performance align with the performance of most stocks?
 - Did the market environment improve, deteriorate, or become mixed relative to the previous trading day?
@@ -168,7 +168,7 @@ The question that most needs confirmation on the next trading day.
 
 [IV. Writing Requirements]
 
-- Write in Chinese, retaining necessary English ticker symbols and identifiers. Target approximately 2,000–3,000 Chinese characters for the main text.
+- Write in English, retaining necessary ticker symbols and identifiers. Target approximately 1,200–1,800 words for the main text.
 - Lead with conclusions. Focus on changes, evidence, and revisions rather than repeating news background.
 - Complete reliable work, stating statistical coverage and material missing observations.
 - Without browsing, state the limitation and identify the verifiable, non-current scope.

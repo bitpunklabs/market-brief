@@ -56,7 +56,7 @@ What should be tested next week, rather than predicting a single certain directi
 State the actual number of trading days, market-data and news cutoffs in both U.S. Eastern and Beijing time, and data limitations.
 
 ## 1. This Week's Core Conclusions
-In approximately 250 Chinese characters, answer:
+In approximately 150 words, answer:
 Was this week's trading mainly about growth, inflation, policy rates, corporate earnings, risk appetite, or events involving a few companies?
 What were the 3–5 most important changes relative to last week?
 Was index performance supported by most sectors and stocks?
@@ -181,7 +181,7 @@ The most important invalidation condition;
 One question on which substantial disagreement remains.
 
 [Writing Requirements]
-Write in Chinese, retaining necessary English ticker symbols and identifiers. Target approximately 2,500–3,500 Chinese characters for the main text.
+Write in English, retaining necessary ticker symbols and identifiers. Target approximately 1,500–2,200 words for the main text.
 Lead with conclusions. Prioritize changes, mechanisms, and validation rather than accumulating news items.
 Cite sources close to key figures and facts.
 If web access is unavailable, state this clearly. When data are missing, complete the reliable portions.

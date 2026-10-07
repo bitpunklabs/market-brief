@@ -3,6 +3,12 @@
 Apply the selected cadence and market boundary conventions. These are distinct
 research jobs; organization and section titles are design choices.
 
+Approximate report lengths follow the resolved language. For English, use
+1,200–1,800 words for premarket/postmarket/daily, 1,500–2,200 for weekly, and
+1,800–2,800 for monthly; core summaries about 120/150/180 words respectively.
+Chinese length guidance appears below. Adapt other languages to comparable depth;
+substantive completeness takes priority over these editorial targets.
+
 ## Premarket — equities
 
 - Default: next local trading session whose regular open is ahead. Verify holidays,

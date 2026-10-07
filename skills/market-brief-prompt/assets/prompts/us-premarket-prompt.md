@@ -48,7 +48,7 @@ The central questions are: What is the market repricing, which gaps between expe
 State the information cutoff in both U.S. Eastern and Beijing time, the timestamps of major quotes, and important limitations.
 
 ## 1. Today's Core Conclusions
-In approximately 200 Chinese characters, answer:
+In approximately 120 words, answer:
 - Is the market currently driven mainly by growth, inflation, interest rates, earnings, or risk appetite?
 - What has changed most significantly since the previous completed trading day?
 - Which 3–5 variables are most likely to affect pricing today?
@@ -150,7 +150,7 @@ The risk most likely to overturn the current assessment.
 
 [IV. Quality Requirements]
 
-- Write in Chinese, retaining necessary English ticker symbols and identifiers. Target approximately 2,000–3,000 Chinese characters for the main text.
+- Write in English, retaining necessary ticker symbols and identifiers. Target approximately 1,200–1,800 words for the main text.
 - Cite sources close to key facts, figures, and important assessments, prioritizing original materials.
 - Disclose material missing data and complete verifiable work using retrieved inputs.
 - Without browsing, state the limitation and the verifiable non-current scope.

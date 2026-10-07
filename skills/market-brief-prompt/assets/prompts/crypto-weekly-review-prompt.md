@@ -64,7 +64,7 @@ Produce one integrated weekly report on persistence, rotation, outlook and actua
 State the full seven-day review interval, market-data endpoint, news cutoff, and following-week outlook dates in UTC and Beijing time, plus material sample and disclosure limitations.
 
 ## 1. The Week's Core Conclusions
-In approximately 250 Chinese characters, answer:
+In approximately 150 words, answer:
 What primarily drove repricing: macro conditions, spot demand, leverage, supply, protocol economics, or idiosyncratic events?
 What were the 3–5 consequential changes relative to the preceding week?
 Did the move broaden or remain concentrated?
@@ -151,7 +151,7 @@ Keep these conclusions consistent with the earlier outlook. Explain whether the 
 
 [IV. Writing Requirements]
 
-Write in Chinese, retaining necessary English tickers and identifiers. Target approximately 2,500–3,500 Chinese characters for the main text.
+Write in English, retaining necessary tickers and identifiers. Target approximately 1,500–2,200 words for the main text.
 Integrate full-week persistence and rotation with substantive future analysis; distinguish post-period facts and forward hypotheses from completed-week findings.
 End with one sentence answering: “Can this week's repricing persist, and what is the most important observable test of that persistence?”
 

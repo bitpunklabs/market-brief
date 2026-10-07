@@ -13,8 +13,10 @@ and the resulting report happen at execution time.
 
 Resolve market, cadence, and any explicit date/period, cutoff, focus, restricted
 coverage, language, prior-report material, or destination. Ask for a missing or
-conflicting essential choice; preserve supplied values exactly. Default reports
-to Chinese. A focus adds depth; restricted coverage changes the universe.
+conflicting essential choice; preserve supplied values exactly. Apply the resolved
+language to both prompt and report: default to Chinese (`zh`) for CN and English
+(`en`) for every other market. Explicit language requests override this default.
+A focus adds depth; restricted coverage changes the universe.
 Unspecified dates retain execution-time resolution rules.
 
 For an upgrade, read the supplied prompt and identify its research obligations
