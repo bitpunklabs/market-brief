@@ -1,0 +1,8 @@
+{
+  "now": "2026-10-07T15:40:00Z",
+  "request": {
+    "market": "crypto",
+    "cadence": "daily",
+    "target": "2026-10-05"
+  }
+}
