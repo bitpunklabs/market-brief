@@ -58,7 +58,7 @@ Synthesize full-month drivers and market-wide evidence, distinguishing broad tre
 State the market-data period end in U.S. Eastern time, the news cutoff, the actual number of trading days, and important data gaps.
 
 ## 1. Core Monthly Assessment
-In approximately 300 Chinese characters, answer:
+In approximately 180 words, answer:
 Was the main driver this month earnings, valuations, interest rates, growth, inflation, or risk appetite?
 What were the 3–5 most important structural changes relative to the previous month?
 Do indices, market breadth, bonds, and credit markets tell a consistent story?
@@ -211,7 +211,7 @@ The most important counterevidence;
 One question that still cannot be answered reliably.
 
 [Writing Requirements]
-Write in Chinese with needed tickers, about 3,000–4,500 characters, prioritizing substantive depth.
+Write in English with needed tickers, about 1,800–2,800 words, prioritizing substantive depth.
 Lead with conclusions. Prioritize changes, evidence, disagreements, and validation.
 Cite sources close to key facts and figures.
 If web access is unavailable, state this clearly. When some data are missing, complete the verifiable portions.

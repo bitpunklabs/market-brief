@@ -91,7 +91,7 @@ complete verifiable work. Without browsing, state the limitation and identify th
 output's non-current scope. Execution selects a disclosed reference universe from
 available sources; user watchlists add context.
 
-Deliver one integrated report, conclusions first, in Chinese by default. State
+Deliver one integrated report, conclusions first, in the resolved language. State
 period/cutoffs and meaningful limitations near the title. Use a # title, ## main
 sections, natural paragraphs, compact comparison tables, and short observation or
 calendar lists. Keep cells brief, one record per row, blank lines around tables,

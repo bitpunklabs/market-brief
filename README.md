@@ -13,7 +13,7 @@ $market-brief-prompt 生成2026年9月Crypto月度prompt，仅使用月末前公
 $market-brief-prompt 优化这份旧prompt，保留研究深度并简化重复指令。
 ```
 
-CN、US支持盘前/盘后/周度/月度；Crypto支持日报/周度/月度。默认报告中文。
+CN、US支持盘前/盘后/周度/月度；Crypto支持日报/周度/月度。prompt 和报告默认 CN 使用中文，其他市场使用英文；显式语言要求覆盖默认。
 其他市场先用官方资料建立制度画像，再复用共享能力与相应频率。
 
 `references/` 是生成规则主体；`assets/prompts/` 的11份手写prompt作为对照组，

@@ -70,7 +70,7 @@ Produce an integrated full-month review, next-month/1–3-month outlook and asse
 State the reviewed interval, number of calendar days, market-data endpoint, news cutoff in UTC and Beijing time, next-month and medium-term outlook dates, and important coverage or comparability limitations.
 
 ## 1. Core Monthly Assessment
-In approximately 300 Chinese characters, answer:
+In approximately 180 words, answer:
 Was the main driver macro liquidity, institutional or other spot demand, leverage, adoption, token economics, supply, or risk appetite?
 What were the 3–5 structural changes relative to the preceding month?
 Did benchmarks, breadth, capital flows, and operating evidence tell a consistent story?
@@ -187,7 +187,7 @@ One question that cannot yet be answered reliably.
 
 [IV. Writing Requirements]
 
-Write in Chinese, retaining necessary English tickers and identifiers. Target approximately 3,000–4,500 Chinese characters for the main text.
+Write in English, retaining necessary tickers and identifiers. Target approximately 1,800–2,800 words for the main text.
 Prioritize changes in the medium-term environment, economic evidence, valuation expectations, and vulnerabilities. Integrate a substantive next-month and 1–3-month plan within the same report, without duplicating the retrospective analysis. Broader coverage should not become a catalogue of tokens or a compilation of weekly news.
 End with one sentence answering: “Did this month change the demand outlook, token-holder economics, the risk premium the market accepts, or a combination—and which evidence matters most next?”
 
