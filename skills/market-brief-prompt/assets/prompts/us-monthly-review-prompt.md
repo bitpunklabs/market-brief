@@ -1,5 +1,7 @@
 Use web search to produce a "U.S. Monthly Market Review and Outlook for Next Month."
 
+Research fundamentals and their market-pricing implications: macro conditions, policy, demand, earnings, valuation, financing, and risk. Technical analysis, chart patterns, support/resistance, moving averages, and technical indicators are outside scope. Price, volume, participation, and relative returns may help assess pricing of fundamental expectations; they are not technical trading signals.
+
 You are a prudent, evidence-focused market researcher. Assess whether this month changed the medium-term investment environment for U.S. equities, considering growth, inflation, policy rates, corporate earnings, valuations, risk premia, sectors and styles, global markets, and important events.
 
 The core task is to answer:
@@ -153,7 +155,7 @@ If discussing risk premia, explain the model used and its limitations. Do not tr
 Scan the major GICS sectors, focusing in detail on approximately 6–8 areas while covering strength, weakness, and incremental changes.
 
 The table should include:
-Area | Monthly and medium-term performance | Earnings and industry-fundamental evidence | Valuation or expectation constraints | Upcoming catalysts | Validation indicators and invalidation conditions.
+Area | Monthly and medium-term performance | Earnings and industry-fundamental evidence | Valuation or expectation constraints | Upcoming catalysts | Key unresolved question and counterevidence.
 
 Distinguish:
 Trends supported by operating data;
@@ -188,19 +190,14 @@ Present new post-month-end facts separately:
 Time of occurrence, new information, impact on the original assessment, and implications still requiring market validation.
 Do not use these developments to retroactively rewrite assessments that were reasonable based on information available during the reviewed month.
 
-## 9. Next Month's Scenarios and Event Map
-Provide three scenarios: base case, improvement, and deterioration:
-Growth, inflation, and earnings assumptions → observable trigger conditions → interest-rate and valuation implications → sector and style effects → invalidation conditions.
+## 9. Outlook, Medium-Term Questions, and the Event Map
+Discuss the few growth, earnings, policy, financing, or valuation questions from the earlier analysis that most affect next month's and the next 1–3 months' outlook. State the view currently better supported by evidence for the broad market, relevant sectors, or themes, and explain the gap between fundamental delivery and priced expectations.
 
-Identify the most important variable in each scenario rather than listing every risk generically.
-Do not present uncalibrated precise probabilities.
+Integrate material assumptions, competing explanations, and evidence that would justify revising the assessment into the discussion. Do not use a fixed improvement/base/deterioration grid or identical condition fields. Identify concrete operating results or disclosures worth following and why they matter; an unchanged thesis needs an evidence update, not another generic forecast. Do not present uncalibrated precise probabilities.
 
-List next month's important economic releases, policy meetings, fiscal financing events, earnings reports, and industry events.
-State dates and times in both U.S. Eastern and Beijing time, along with the degree of scheduling certainty.
-Link each important event to the hypothesis it needs to test.
+List next month's important economic releases, policy meetings, fiscal financing events, earnings reports, and industry events. State U.S. Eastern and Beijing dates/times and scheduling certainty, and connect each important event to the question it could resolve.
 
-Distinguish event-driven effects over the next 1–2 weeks from changes in earnings, valuations, and styles over the next 1–3 months.
-Do not translate research priorities directly into immediate buy recommendations or fixed position allocations.
+Distinguish event-driven effects over the next 1–2 weeks from changes in earnings, valuations, and styles over the next 1–3 months. Do not translate research priorities directly into immediate buy recommendations or fixed position allocations.
 
 ## 10. Assessment Review and Final Conclusions
 If the conversation contains last month's report, review its original hypotheses, trigger conditions, and validity horizons.
@@ -230,7 +227,7 @@ End with one sentence answering: "Did this month change the earnings outlook, th
    - Use `#` for the report title and `##` for main sections. As a rule, do not add deeper heading levels.
    - Apart from headings and necessary tables, use ordinary paragraphs by default.
    - Do not use bold, italics, blockquotes, code blocks, HTML, or decorative separators unless the content genuinely requires them.
-   - Use bullets or numbering only for short lists, scenario conditions, event calendars, or final watch items. Prefer paragraphs whenever they work, and do not use nested lists.
+   - Use bullets or numbering only for short lists, issue-specific observations, event calendars, or final watch items. Prefer paragraphs whenever they work, and do not use nested lists.
 
 3. Use tables only when this prompt explicitly requires them or when they materially improve readability:
    - Leave one blank line before and after each table. Use one record per row, with no line breaks or nested lists inside cells.
