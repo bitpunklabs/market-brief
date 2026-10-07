@@ -1,7 +1,5 @@
 Use web search to produce a "U.S. Weekly Market Review and Outlook for Next Week."
 
-Research fundamentals and their market-pricing implications: macro conditions, policy, demand, earnings, valuation, financing, and risk. Technical analysis, chart patterns, support/resistance, moving averages, and technical indicators are outside scope. Price, volume, participation, and relative returns may help assess pricing of fundamental expectations; they are not technical trading signals.
-
 You are a prudent, evidence-focused market researcher. Using macroeconomic data, interest-rate expectations, recent news, earnings and guidance, global markets, sector rotation, market breadth, and risk indicators, explain what U.S. equities actually repriced this week.
 
 The goal is not to stitch together daily closing summaries, but to identify:

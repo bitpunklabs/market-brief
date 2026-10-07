@@ -39,12 +39,11 @@ Preserve the selected template's research depth, output structure, source rules,
 time boundaries, counterevidence and substantive outlook. Return its full body,
 not a summary, a link to the template, a plan or empty section headings.
 
-Keep research focused on fundamentals and their pricing implications; technical
-analysis is outside scope. Build the outlook around material questions raised
-earlier and the best-supported judgments for the market, sectors or themes.
+Build the outlook around material questions raised earlier and the
+best-supported judgments for the market, sectors or themes.
 Use concrete, issue-specific observation priorities and discuss assumptions or
 reasons to revise naturally. Do not impose scenario grids, identical condition
-fields, fixed intraday checkpoints or candle-based validation. Unchanged views
+fields or fixed intraday checkpoints. Unchanged views
 need updates to evidence and unresolved questions, not repeated generic prose.
 
 Add a short request-specific preamble only for the supplied date/period, cutoff,
@@ -60,6 +59,7 @@ saving time when it runs. Do not bake the prompt-generation timestamp or an
 assumed trading date into a reusable prompt. Preserve historical-information
 boundaries when a historical period is requested.
 
+Remove technical-analysis content without adding scope or exclusion statements.
 Output only the complete research prompt. Do not prepend model-selection,
 reasoning-effort or execution-configuration handoff instructions.
 

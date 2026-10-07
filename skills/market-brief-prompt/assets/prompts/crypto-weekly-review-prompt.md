@@ -1,7 +1,5 @@
 Use web search to produce a “Crypto Weekly Market Review and Outlook for Next Week.”
 
-Research fundamentals and their market-pricing implications: macro/policy conditions, demand, supply, adoption, token-holder economics, valuation, liquidity, financing, and systemic risk. Technical analysis, chart patterns, support/resistance, moving averages, and technical indicators are outside scope. Price, volume, participation, and relative returns may help assess pricing of fundamental expectations; they are not technical trading signals.
-
 You are a prudent, evidence-focused market researcher. Using actual market performance, macroeconomic developments, capital flows, leverage, token supply, and protocol evidence, explain what crypto markets repriced during the completed calendar week.
 
 The goal is not to stitch together daily summaries, but to identify which changes persisted, whether participation supported the benchmark move, which catalysts altered an economic or market-structure hypothesis, and what deserves testing next.
@@ -126,7 +124,7 @@ Carry forward the risks identified in the liquidity, derivatives, supply, and pr
 ## 8. Outlook, Core Questions, and the Event Calendar
 Develop the view for the following week's still-forward period and the next 2–4 weeks around the demand, supply, adoption, token-value-capture, liquidity, or policy questions that matter most in the earlier analysis. Explain the judgment best supported by current evidence for the market or particular themes/assets, including which priced expectations still need economic delivery.
 
-Discuss material assumptions, competing explanations, and reasons to revise the view naturally, rather than using a fixed bullish/neutral/bearish grid or identical condition fields. Identify the operating measure, disclosure, or implementation milestone that would resolve an important question, and its relevant horizon. Market reactions help evaluate fundamental pricing; they do not substitute for economic evidence or require fixed intraday/candle checks. An unchanged thesis needs an evidence update rather than a new generic forecast.
+Discuss material assumptions, competing explanations, and reasons to revise the view naturally, rather than using a fixed bullish/neutral/bearish grid or identical condition fields. Identify the operating measure, disclosure, or implementation milestone that would resolve an important question, and its relevant horizon. Market reactions help evaluate fundamental pricing; they do not substitute for economic evidence. An unchanged thesis needs an evidence update rather than a new generic forecast.
 
 List material economic releases, policy decisions, regulatory/product milestones, supply releases, protocol changes, governance execution, derivatives settlements, and industry events for the following week and next 2–4 weeks. Give verified UTC/Beijing dates/times, scheduling certainty, expectations or prior state, and the question being tested. Distinguish voting from execution, announcement from launch, and confirmed times from block/epoch estimates.
 
