@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-labelledby="title desc">
+  <title id="title">Market Brief Prompt demo placeholder</title>
+  <desc id="desc">A static placeholder for a future recording showing a research request, prompt design and review, and a complete Markdown research assignment.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#7b847d"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="600" rx="24" fill="#f5f6f2"/>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <text x="64" y="68" font-size="15" font-weight="600" letter-spacing="2" fill="#647367">MARKET BRIEF PROMPT</text>
+    <text x="64" y="130" font-size="36" font-weight="600" fill="#1c2820">A clear request. A complete research task.</text>
+    <text x="64" y="170" font-size="19" fill="#606c63">CN equities · U.S. equities · Crypto</text>
+    <rect x="64" y="220" width="312" height="248" rx="14" fill="#fff" stroke="#d9dfd7"/>
+    <rect x="444" y="220" width="312" height="248" rx="14" fill="#fff" stroke="#d9dfd7"/>
+    <rect x="824" y="220" width="312" height="248" rx="14" fill="#fff" stroke="#d9dfd7"/>
+    <g font-size="13" font-weight="600" letter-spacing="1.5" fill="#647367">
+      <text x="88" y="257">01 / REQUEST</text>
+      <text x="468" y="257">02 / DESIGN &amp; REVIEW</text>
+      <text x="848" y="257">03 / DELIVER</text>
+    </g>
+    <g font-size="23" font-weight="600" fill="#1c2820">
+      <text x="88" y="307">U.S. monthly review</text>
+      <text x="468" y="307">Research priorities</text>
+      <text x="848" y="307">Complete Markdown</text>
+    </g>
+    <g font-size="17" fill="#606c63">
+      <text x="88" y="347">Market + cadence</text>
+      <text x="88" y="378">Period + cutoff</text>
+      <text x="88" y="409">Focus + language</text>
+      <text x="468" y="347">Evidence and boundaries</text>
+      <text x="468" y="378">Earnings and valuation</text>
+      <text x="468" y="409">Review against the control</text>
+      <text x="848" y="347">One integrated assignment</text>
+      <text x="848" y="378">Issue-driven outlook</text>
+      <text x="848" y="409">Ready for a research model</text>
+    </g>
+    <path d="M392 344 H428" stroke="#7b847d" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M772 344 H808" stroke="#7b847d" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="64" y="538" font-size="15" fill="#647367">DEMO PREVIEW · PLACEHOLDER</text>
+    <text x="1136" y="538" text-anchor="end" font-size="15" fill="#647367">Request / review / prompt</text>
+  </g>
+</svg>

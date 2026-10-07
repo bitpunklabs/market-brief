@@ -1,29 +1,104 @@
 # Market Brief Prompt
 
-生成式市场研究 prompt skill。模型从共享研究能力、市场机制和频率职责设计
-完整任务，供同一个接收模型完成研究、分析、展望、写作与自审。
+Turn a market research request into a complete, ready-to-copy prompt.
 
-入口：[SKILL.md](skills/market-brief-prompt/SKILL.md)。复制整个
-`skills/market-brief-prompt/` 目录即可安装。
+A lightweight agent skill for CN equities, U.S. equities, and Crypto. It designs
+research assignments from shared capabilities, market mechanisms, and cadence
+requirements, then reviews them against hand-written controls. Each prompt gives
+the receiving model one integrated task: research, verify, analyze, develop an
+outlook, write, and self-review.
 
-```text
-$market-brief-prompt 生成A股盘前研究prompt。
-$market-brief-prompt 生成美股周度prompt，重点分析财报和利率。
-$market-brief-prompt 生成2026年9月Crypto月度prompt，仅使用月末前公开信息。
-$market-brief-prompt 优化这份旧prompt，保留研究深度并简化重复指令。
+<p align="center">
+  <img src="assets/demo-placeholder.svg" alt="Demo placeholder: a research request becomes a reviewed, ready-to-copy prompt." width="960">
+</p>
+
+*Request → design and review → complete research prompt.*
+
+<!-- DEMO PLACEHOLDER
+Replace the image source above with assets/demo.gif when the recording is ready.
+Storyboard: a 12-second loop, 1200 × 600, readable at 960 px, with a still opening frame.
+0–3s: enter "$market-brief-prompt Generate a U.S. monthly research prompt."
+3–8s: show the generated assignment's time boundaries, earnings, and valuation tasks.
+8–12s: scroll to the issue-driven outlook and copy the complete Markdown prompt.
+Use a real generation recording; the demo ends at prompt delivery.
+-->
+
+## Quick start
+
+Use an agent that can load skills and read local Markdown files. For Codex, copy
+the entire skill folder from this repository's root into your personal skills
+directory:
+
+```sh
+mkdir -p "$HOME/.agents/skills"
+cp -R skills/market-brief-prompt "$HOME/.agents/skills/"
 ```
 
-CN、US支持盘前/盘后/周度/月度；Crypto支持日报/周度/月度。prompt 和报告默认 CN 使用中文，其他市场使用英文；显式语言要求覆盖默认。
-其他市场先用官方资料建立制度画像，再复用共享能力与相应频率。
+For a project-specific installation, use that project's `.agents/skills/`
+directory instead. See the [official Codex skills guide](https://learn.chatgpt.com/docs/build-skills#where-codex-loads-local-skills)
+for discovery details.
 
-`references/` 是生成规则主体；`assets/prompts/` 的11份手写prompt作为对照组，
-`initial-prompts/` 保留相同仓库副本。生成独立起草，交付前比较职责覆盖、分析深度、
-重点可见性、证据取舍和交付清晰度；实质弱化时继续修订，以手写对照作为质量底线。
+Ask the agent to generate or upgrade a prompt:
 
-后市展望围绕研究中的核心未决问题形成具体判断、机制和观察方向。输出采用正向
-任务要求，时间与行情在执行时核验。模型与effort在执行环境配置。
+```text
+$market-brief-prompt Generate a CN premarket research prompt.
+$market-brief-prompt Generate a U.S. weekly prompt focused on earnings and interest rates.
+$market-brief-prompt Generate a September 2026 Crypto monthly prompt using only information public before 2026-10-01 00:00 UTC.
+$market-brief-prompt Upgrade the prompt below, preserving its research depth and simplifying repeated instructions.
+```
 
-[功能设计](design-docs/market-brief-skill-design.md)与
-[技术设计](design-docs/market-brief-skill-architecture.md)说明模块、生成、维护与演进。
-生成样例、比较和迭代保存在忽略的 `temp/`。本地prompt覆盖检查与实际研究报告质量
-分开验收。项目保持一个skill与Markdown资源，无需模型客户端或调度服务。
+Specify a date or period, information cutoff, focus, coverage restriction, language,
+or Markdown destination when needed. A focus adds depth; a restriction changes
+the research universe. Unspecified dates are resolved when the prompt is executed.
+
+The output is a self-contained prompt. Run it with a model that has web research
+and source-verification tools to produce a current market report. Model and effort
+settings belong in the execution environment.
+
+## Supported markets
+
+| Market | Cadences | Default prompt and report language |
+| --- | --- | --- |
+| CN equities | Premarket, postmarket, weekly, monthly | Chinese |
+| U.S. equities | Premarket, postmarket, weekly, monthly | English |
+| Crypto | Daily, weekly, monthly | English |
+
+Explicit language requests override these defaults. Other markets require an
+institutional profile grounded in official sources before prompt generation.
+
+## How it works
+
+1. Resolve the request and read the relevant research, cadence, and market resources.
+2. Design a complete assignment with visible analytical priorities and evidence requirements.
+3. Review the draft against semantic acceptance criteria and the matching hand-written control; repair material losses before delivery.
+
+The outlook follows the research's unresolved questions: the best-supported view,
+its mechanism, priced expectations, and evidence that would advance or revise it.
+Time, calendars, current rules, and market data are verified during execution.
+
+The package contains one [skill entry point](skills/market-brief-prompt/SKILL.md),
+[shared research capabilities](skills/market-brief-prompt/references/research.md),
+[cadence requirements](skills/market-brief-prompt/references/cadences.md),
+[market profiles](skills/market-brief-prompt/references/markets/), and
+[11 hand-written controls](skills/market-brief-prompt/assets/prompts/).
+All runtime resources live inside the skill folder; the project has no client,
+database, or scheduler dependency.
+
+## Status and evaluation
+
+Early preview. Local evaluation records cover 11 market/cadence combinations,
+two parameter cases, and two fresh-context generations, with revisions against
+the controls. These are prompt-text evaluations; report quality remains to be
+tested with matched market, date, cutoff, source access, and model settings.
+
+Evaluation artifacts currently live in the ignored `temp/` directory and are
+not included in a fresh checkout. See the
+[evaluation criteria](skills/market-brief-prompt/references/evaluation.md) for the
+acceptance method. A published evaluation sample and a license are pending.
+
+## Contributing
+
+Keep shared research responsibilities, cadence rules, and market semantics in
+their respective resources. Preserve coverage, depth, evidence selection, and
+deliverable clarity when simplifying instructions. Compare affected prompts with
+the controls and record limitations alongside evaluation results.
