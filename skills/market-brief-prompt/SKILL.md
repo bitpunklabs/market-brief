@@ -1,6 +1,6 @@
 ---
 name: market-brief-prompt
-description: Generate a complete, ready-to-run market research prompt for CN equities, U.S. equities, or Crypto using the original premarket, postmarket, daily, weekly, and monthly templates. Use when the user wants a market-brief prompt to hand to a high-capability model.
+description: Generate a complete, fundamentals-focused market research prompt for CN equities, U.S. equities, or Crypto using the premarket, postmarket, daily, weekly, and monthly templates. Use when the user wants a market-brief prompt to hand to a research model.
 ---
 
 # Market Brief Prompt
@@ -36,8 +36,16 @@ reports, including templates whose instructions are written in English.
 ## Prepare the complete prompt
 
 Preserve the selected template's research depth, output structure, source rules,
-time boundaries, counterevidence and conditional outlook. Return its full body,
+time boundaries, counterevidence and substantive outlook. Return its full body,
 not a summary, a link to the template, a plan or empty section headings.
+
+Keep research focused on fundamentals and their pricing implications; technical
+analysis is outside scope. Build the outlook around material questions raised
+earlier and the best-supported judgments for the market, sectors or themes.
+Use concrete, issue-specific observation priorities and discuss assumptions or
+reasons to revise naturally. Do not impose scenario grids, identical condition
+fields, fixed intraday checkpoints or candle-based validation. Unchanged views
+need updates to evidence and unresolved questions, not repeated generic prose.
 
 Add a short request-specific preamble only for the supplied date/period, cutoff,
 focus, restricted scope, language, prior-report materials or output destination.

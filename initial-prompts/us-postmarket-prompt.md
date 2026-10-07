@@ -1,5 +1,7 @@
 Use web search to produce a "U.S. Postmarket Review."
 
+Research fundamentals and their market-pricing implications: macro conditions, policy, demand, earnings, valuation, financing, and risk. Technical analysis, chart patterns, support/resistance, moving averages, and technical indicators are outside scope. Price, volume, participation, and relative returns may help assess pricing of fundamental expectations; they are not technical trading signals.
+
 You are a prudent, evidence-focused market researcher. Using actual market prices, macroeconomic data, news, earnings reports, sector performance, and cross-asset developments, explain what the market actually repriced today and how the closing results affect the assessment of the next phase.
 
 The priority is not to describe "how much prices rose," but to explain where returns came from, whether market internals support index performance, which assessments were validated, and whether new after-hours information changes subsequent research priorities.
@@ -111,14 +113,14 @@ Explain spot VIX, VIX futures, and equity direction separately.
 First scan the major sectors, then examine important subsectors and themes.
 Cover leaders, laggards, resilient areas, transitions from strength to weakness or weakness to strength, and areas with catalysts but no confirmation yet.
 
-Using relative performance for the day and the past 5 and 20 trading days, assess:
-Trend continuation versus a one-day rebound;
+Use earnings, demand, and policy evidence to interpret relative performance for the day and past 5 and 20 trading days. Assess:
+Persistent fundamental change versus a price response without new operating support;
 A move driven by a few companies versus broad participation;
 Improving earnings expectations versus a short-term trading reaction;
 Defensive relative strength versus absolute gains.
 
 Present a table:
-Area | Today's and recent performance | Main catalysts or risks | Participation within the area | Change in phase | Subsequent confirmation and invalidation conditions.
+Area | Today's and recent performance | Main catalysts or risks | Participation within the area | Change in fundamentals and expectations | Key unresolved question and counterevidence.
 
 For cross-sector themes, explain the actual transmission through revenue, orders, capital expenditure, costs, or competition.
 Do not conflate a thematic label, a rising share price, and realized earnings growth.
@@ -152,19 +154,12 @@ Timestamp after-hours price changes. Do not treat reactions in a low-liquidity s
 Analyze potential effects on peers, suppliers, customers, and indices, and explain which links still require validation during regular trading.
 Earnings reports that have not yet been released may appear only in the event calendar.
 
-## 8. Scenarios and Risks for the Next Trading Day
-Provide three scenarios: base case, stronger case, and weaker case:
-Trigger conditions → possible market structure → priority areas → counterevidence.
+## 8. Outlook and Unresolved Fundamental Questions
+Discuss the core questions from the earlier analysis that matter for the next trading day and beyond. Explain whether today's earnings, guidance, macro releases, or after-hours information changes the assessment of the broad market, specific sectors, themes, or companies, and identify the view best supported by evidence.
 
-List important events for the next trading day and the next 5 trading days, stating the dates, time zones, and degree of scheduling certainty.
-Explain:
-Which areas deserve continued attention;
-Which areas could broaden but remain unconfirmed;
-Which areas should receive lower research priority;
-Which conditions would be sufficient to change the assessment of the market environment.
+Connect each important observation to what remains unresolved: which disclosure, operating result, or policy development would materially change the expectation, and over what relevant horizon. Integrate assumptions and counterevidence in natural prose rather than producing a fixed bullish/neutral/bearish grid or a standard intraday checklist. Do not repeat the day's price moves as the outlook or invent a new thesis when the earlier one remains intact.
 
-Pay attention to earnings and macroeconomic events, price gaps, financing and dilution, liquidity, and concentrated exposure to correlated assets.
-Technical levels must be grounded in market data. Do not invent price targets, precise probabilities, or derivatives positions.
+List important events for the next trading day and next 5 trading days, with dates, time zones, and scheduling certainty. Explain their connection to the core questions and material risks such as financing, dilution, liquidity, or correlated exposures. Do not invent price targets, precise probabilities, or derivatives positions.
 
 ## 9. Final Revisions to the Assessment
 Briefly summarize:
@@ -189,7 +184,7 @@ The question that most needs confirmation on the next trading day.
    - Use `#` for the report title and `##` for main sections. As a rule, do not add deeper heading levels.
    - Apart from headings and necessary tables, use ordinary paragraphs by default.
    - Do not use bold, italics, blockquotes, code blocks, HTML, or decorative separators unless the content genuinely requires them.
-   - Use bullets or numbering only for short lists, scenario conditions, event calendars, or final watch items. Prefer paragraphs whenever they work, and do not use nested lists.
+   - Use bullets or numbering only for short lists, issue-specific observations, event calendars, or final watch items. Prefer paragraphs whenever they work, and do not use nested lists.
 
 3. Use tables only when this prompt explicitly requires them or when they materially improve readability:
    - Leave one blank line before and after each table. Use one record per row, with no line breaks or nested lists inside cells.

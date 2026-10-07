@@ -1,5 +1,7 @@
 Use web search to produce a “Crypto Weekly Market Review and Outlook for Next Week.”
 
+Research fundamentals and their market-pricing implications: macro/policy conditions, demand, supply, adoption, token-holder economics, valuation, liquidity, financing, and systemic risk. Technical analysis, chart patterns, support/resistance, moving averages, and technical indicators are outside scope. Price, volume, participation, and relative returns may help assess pricing of fundamental expectations; they are not technical trading signals.
+
 You are a prudent, evidence-focused market researcher. Using actual market performance, macroeconomic developments, capital flows, leverage, token supply, and protocol evidence, explain what crypto markets repriced during the completed calendar week.
 
 The goal is not to stitch together daily summaries, but to identify which changes persisted, whether participation supported the benchmark move, which catalysts altered an economic or market-structure hypothesis, and what deserves testing next.
@@ -11,7 +13,7 @@ Produce one integrated weekly report combining retrospective analysis, a substan
 1. Use UTC as the primary calendar and Beijing time, Asia/Shanghai (UTC+8), as the secondary reference. Define a research week as [Monday 00:00 UTC, the following Monday 00:00 UTC), including Saturday and Sunday.
    Unless a week is specified, review the most recent fully completed UTC week. If the current week is unfinished, default to the previous full week. Produce week-to-date analysis only when explicitly requested, separating the observed interval from the remaining current week and the next calendar week. These are research boundaries, not exchange closures.
 
-2. Measure returns from consistent prices at the start and end boundaries, or equivalent completed UTC candles. Show the past 4 and 13 weeks as context.
+2. Measure returns from consistent prices at the start and end boundaries. Show the past 4 and 13 weeks as context.
    Do not substitute the latest rolling 7 days, a business-week product-flow window, or Friday's U.S. close. Weekend crypto price action belongs inside the reviewed week, not in an automatic “weekend updates” appendix.
 
 3. Record the market-data endpoint and the news cutoff separately. Developments after the ending Monday 00:00 UTC boundary belong in “Post-Week Updates.” Keep their prices out of the reviewed return.
@@ -34,7 +36,7 @@ Produce one integrated weekly report combining retrospective analysis, a substan
    Separate facts, interpretations, and forward hypotheses. Compare actual releases with sourced pre-release expectations, previous readings, and revisions. A prior reading or a project's own target is not market consensus. Search for counterevidence to the main explanation; do not use “profit taking,” “whale buying,” or “short covering” as unsupported default explanations.
 
 3. Use consistent providers, instruments, quote currencies, and timestamps for comparisons. Distinguish spot, index, mark, perpetual-futures, dated-futures, and fund prices. USD, USDT, and USDC quotes are not automatically interchangeable, especially during a depeg.
-   Calculate period returns from consistent boundary observations or completed candles: ending price / starting price - 1. Compound subperiod returns rather than adding them. Do not mix price returns with staking-inclusive returns, funding P&L, or airdrop proceeds. Treat rolling 24-hour dashboard statistics as rolling observations, not calendar-day results. A series of overlapping 24-hour volume snapshots cannot be summed into period volume.
+   Calculate period returns from consistent boundary price observations: ending price / starting price - 1. Compound subperiod returns rather than adding them. Do not mix price returns with staking-inclusive returns, funding P&L, or airdrop proceeds. Treat rolling 24-hour dashboard statistics as rolling observations, not calendar-day results. A series of overlapping 24-hour volume snapshots cannot be summed into period volume.
 
 4. Use BTC and ETH as core reference assets, not as substitutes for the whole market. Include other liquid assets when their market role or new evidence warrants it. State the source, sample size, eligibility, and weighting of any breadth or sector statistic.
    Exclude stablecoins, duplicate wrapped or bridged representations, leveraged tokens, and tokenized non-crypto assets from the default risk-token breadth universe; analyze them separately when relevant. Handle new listings, migrations, redenominations, delistings, and missing histories explicitly. Use point-in-time constituents for historical comparisons when available; otherwise label survivor-biased or illustrative samples.
@@ -55,7 +57,7 @@ Produce one integrated weekly report combining retrospective analysis, a substan
 9. Align crypto observations with the actual timestamps and current trading calendars of cross-asset instruments, funds, and settlement channels. Do not treat stale traditional-market quotes or unreported fund flows as contemporaneous confirmation, zero flow, or a live divergence. Verify daylight saving time for U.S. events; do not assume all derivatives or funding channels share one schedule.
    Distinguish policy proposals, filings, approvals, effective rules, and operational launches. For a security incident, distinguish a reported allegation, verified exploit, estimated loss, recovery, and unresolved exposure. Do not amplify unverified wallet identities or rumors as facts.
 
-10. Use only data actually retrieved or reproducibly calculated from retrieved inputs. Ground technical levels in a named instrument, timestamp, timeframe, and method; distinguish completed candles from an unfinished candle. Do not invent indicators, targets, causal contribution percentages, calibrated probabilities, or universal signal thresholds.
+10. Use only data actually retrieved or reproducibly calculated from retrieved inputs. Do not invent numerical data, valuation targets, causal contribution percentages, or calibrated probabilities.
     Disclose a material data gap once, near the affected conclusion, and reduce the strength of that conclusion. Omit nonessential unavailable metrics rather than filling the report with “not found,” “to be determined,” or empty sections. An inaccessible paid dataset is not permission to fabricate a proxy. Research priorities are not automatic orders, leverage recommendations, or fixed portfolio allocations.
 
 [III. Use the Following Output Structure]
@@ -108,11 +110,11 @@ Scan the broad functional market, including monetary assets, settlement and scal
 Focus on approximately 5–8 areas, covering strength, weakness, participation changes, and credible emerging or deteriorating themes. Keep overlapping categories explicit.
 
 Present one table:
-Area / representatives | Weekly and medium-term relative performance | Economic evidence / actual token exposure | Participation and phase change | Next catalyst / confirmation condition | Counterevidence / invalidation condition.
+Area / representatives | Weekly and medium-term relative performance | Economic evidence / actual token exposure | Participation and phase change | Next catalyst / unresolved question | Main counterevidence / risk.
 
 Examine actual usage quality, fees/revenue, incentive dependence, and token value capture only where they bear on the thesis. Distinguish proposed changes from active mechanisms and temporary campaigns from sustained activity.
 Do not infer broad ecosystem improvement from one token or one protocol, and do not treat every related token as an economic beneficiary. Distinguish direct beneficiaries, infrastructure suppliers, cost bearers, and competitors.
-Use completed weekly and daily structure for context, with 4-hour structure only for a meaningful transition or validation point. Explain which themes deserve continued attention, which have catalysts but lack confirmation, and which should receive lower priority; do not make the weekly thesis depend on a few intraday hours.
+Explain which themes deserve continued attention, which have catalysts but lack economic confirmation, and which should receive lower priority. Base the weekly thesis on persistent fundamental evidence and expectations rather than a few intraday hours.
 
 ## 7. Post-Week Updates and Current Starting Conditions
 Present material news, newly released measurements, and price moves after the weekly endpoint separately. State occurrence and disclosure times and explain what they change in the starting conditions for the forward outlook.
@@ -121,19 +123,14 @@ Do not add these moves to the reviewed week's return, use later announcements to
 For important new developments, distinguish the established fact, observed response so far, and implication still requiring validation. Shorten or omit this section if nothing material has occurred after the endpoint.
 Carry forward the risks identified in the liquidity, derivatives, supply, and protocol analysis without repeating them. Identify any new event that changes their transmission mechanism or urgency.
 
-## 8. Next Week's Scenarios and Event Calendar
-Provide three scenarios for the following week's still-forward period: base case, stronger case, and weaker case.
-For each specify:
-Key macro/crypto driver → observable trigger → confirming price, breadth, flow, or economic response → expected rotation and risk structure → priority areas → invalidation condition → validity horizon.
+## 8. Outlook, Core Questions, and the Event Calendar
+Develop the view for the following week's still-forward period and the next 2–4 weeks around the demand, supply, adoption, token-value-capture, liquidity, or policy questions that matter most in the earlier analysis. Explain the judgment best supported by current evidence for the market or particular themes/assets, including which priced expectations still need economic delivery.
 
-Identify the decisive variable in each scenario and explain why it would change the assessment. A positive scenario needs positive confirmation, not merely an absence of bad news. Do not assign uncalibrated probabilities, invented price targets, or unsupported technical levels.
-Distinguish whether a favorable background, an actual event surprise, and a confirmed market response are already present or still hypothetical. Explain what would make the same event produce different reactions under different starting conditions.
+Discuss material assumptions, competing explanations, and reasons to revise the view naturally, rather than using a fixed bullish/neutral/bearish grid or identical condition fields. Identify the operating measure, disclosure, or implementation milestone that would resolve an important question, and its relevant horizon. Market reactions help evaluate fundamental pricing; they do not substitute for economic evidence or require fixed intraday/candle checks. An unchanged thesis needs an evidence update rather than a new generic forecast.
 
-List material economic releases, policy decisions, regulatory/product milestones, token releases, protocol changes, governance execution, derivatives expiries/settlements, and industry events for the following week and the next 2–4 weeks.
-For important events, give UTC/Beijing dates and times, scheduling certainty, the sourced expectation or prior state, the hypothesis being tested, and the response that would count as confirmation. Distinguish a governance vote from execution, a product announcement from launch, and a confirmed clock time from a block- or epoch-based estimate.
+List material economic releases, policy decisions, regulatory/product milestones, supply releases, protocol changes, governance execution, derivatives settlements, and industry events for the following week and next 2–4 weeks. Give verified UTC/Beijing dates/times, scheduling certainty, expectations or prior state, and the question being tested. Distinguish voting from execution, announcement from launch, and confirmed times from block/epoch estimates.
 
-Finish the outlook with approximately three testable weekly hypotheses, each stating its original evidence, observable trigger or validation metric, invalidation condition, and time horizon. Use named assets, benchmarks, or economic measures rather than “sentiment improves.” These are the conditions to revisit in the next weekly edition when this report is available.
-Explain the main reason a promising theme may require more evidence rather than immediate action. A research priority is not an order or a fixed portfolio allocation.
+Preserve the significant judgments and their original evidence/horizons for later review when this report is available, without forcing a fixed number of hypotheses. Do not assign uncalibrated probabilities or invented price targets. Explain why promising economic evidence may still be insufficient for a stronger view; research priority is not an order or fixed allocation.
 
 ## 9. Assessment Review and Final Watchlist
 If an actual previous weekly report is available, review its original hypotheses, trigger conditions, publication time, and validity horizons. An explicitly relevant older hypothesis can also be reviewed within its original horizon; a separate planning report is not required.
@@ -141,8 +138,8 @@ Use a compact comparison where useful:
 Original hypothesis and horizon | Original trigger | Observed post-publication outcome | Evaluation | Required revision.
 
 Classify hypotheses as supported, partially supported, invalidated, not triggered, or still awaiting validation. Assess direction, mechanism, timing, and risk warnings separately.
-Do not score pre-publication price moves, rewrite the original trigger, mark an untriggered scenario as a win or loss, or invalidate a multimonth thesis solely because it has not delivered within one week. Distinguish an earlier forecast from an update issued after major events had already occurred.
-If no prior report is available, omit forecast scoring rather than inventing a track record; still complete the market review, forward scenarios, and final conclusions.
+Do not score pre-publication price moves, rewrite the original trigger, mark an untriggered hypothesis as a win or loss, or invalidate a multimonth thesis solely because it has not delivered within one week. Distinguish an earlier forecast from an update issued after major events had already occurred.
+If no prior report is available, omit forecast scoring rather than inventing a track record; still complete the market review, forward outlook, and final conclusions.
 
 Conclude with:
 The week's most valuable new evidence and why its effect may persist or fade;
@@ -151,7 +148,7 @@ Three confirmation signals for the following week;
 The principal invalidation condition;
 One materially unresolved question.
 
-Keep these conclusions consistent with the earlier scenarios. Explain whether the dominant vulnerability is shared macro sensitivity, narrow liquidity, leverage/collateral, token supply, a venue or stablecoin dependency, or protocol risk. Different tokens with the same underlying dependency are not necessarily diversified exposures.
+Keep these conclusions consistent with the earlier outlook. Explain whether the dominant vulnerability is shared macro sensitivity, narrow liquidity, leverage/collateral, token supply, a venue or stablecoin dependency, or protocol risk. Different tokens with the same underlying dependency are not necessarily diversified exposures.
 
 [IV. Writing Requirements]
 
@@ -172,6 +169,6 @@ Review earlier hypotheses only when the actual prior report is available in the 
 
 3. Cite sources close to key figures, news facts, and evidence-based assessments. Use the platform's supported citations; when these are unavailable, provide readable source names and working source links. Never print raw internal reference IDs, tool fields, unfinished citation syntax, search placeholders, or empty “Sources” sections.
 
-4. Each paragraph should usually contain 2–5 sentences and develop one idea. Use short lists only for scenarios, event calendars, and final watch items. Explain a fact fully once; later sections should develop its implication rather than repeat the same news.
+4. Each paragraph should usually contain 2–5 sentences and develop one idea. Use short lists only for issue-specific observations, event calendars, and final watch items. Explain a fact fully once; later sections should develop its implication rather than repeat the same news.
 
 5. The section order is a research framework, not a requirement to pad the report. Shorten or omit explicitly conditional sections when there is no material evidence. Do not omit core conclusions, period definitions, main supporting and opposing evidence, or the final validation conditions. Prioritize substantive completeness over mechanical word counts while keeping the simplest readable format.

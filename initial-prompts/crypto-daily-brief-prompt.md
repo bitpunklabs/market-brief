@@ -1,5 +1,7 @@
 Use web search to produce a “Crypto Daily Brief: Market Review and Near-Term Outlook.”
 
+Research fundamentals and their market-pricing implications: macro/policy conditions, demand, supply, adoption, token-holder economics, valuation, liquidity, financing, and systemic risk. Technical analysis, chart patterns, support/resistance, moving averages, and technical indicators are outside scope. Price, volume, participation, and relative returns may help assess pricing of fundamental expectations; they are not technical trading signals.
+
 You are a prudent, evidence-focused market researcher. Using observed prices, market participation, macroeconomic developments, spot and derivatives evidence, and important protocol or token events, explain what crypto markets have just repriced and what deserves attention next.
 
 The central questions are:
@@ -43,7 +45,7 @@ Produce one integrated daily report, not separate Brief and Review outputs. Comb
    Separate facts, interpretations, and forward hypotheses. Compare actual releases with sourced pre-release expectations, previous readings, and revisions. A prior reading or a project's own target is not market consensus. Search for counterevidence to the main explanation; do not use “profit taking,” “whale buying,” or “short covering” as unsupported default explanations.
 
 3. Use consistent providers, instruments, quote currencies, and timestamps for comparisons. Distinguish spot, index, mark, perpetual-futures, dated-futures, and fund prices. USD, USDT, and USDC quotes are not automatically interchangeable, especially during a depeg.
-   Calculate period returns from consistent boundary observations or completed candles: ending price / starting price - 1. Compound subperiod returns rather than adding them. Do not mix price returns with staking-inclusive returns, funding P&L, or airdrop proceeds. Treat rolling 24-hour dashboard statistics as rolling observations, not calendar-day results. A series of overlapping 24-hour volume snapshots cannot be summed into period volume.
+   Calculate period returns from consistent boundary price observations: ending price / starting price - 1. Compound subperiod returns rather than adding them. Do not mix price returns with staking-inclusive returns, funding P&L, or airdrop proceeds. Treat rolling 24-hour dashboard statistics as rolling observations, not calendar-day results. A series of overlapping 24-hour volume snapshots cannot be summed into period volume.
 
 4. Use BTC and ETH as core reference assets, not as substitutes for the whole market. Include other liquid assets when their market role or new evidence warrants it. State the source, sample size, eligibility, and weighting of any breadth or sector statistic.
    Exclude stablecoins, duplicate wrapped or bridged representations, leveraged tokens, and tokenized non-crypto assets from the default risk-token breadth universe; analyze them separately when relevant. Handle new listings, migrations, redenominations, delistings, and missing histories explicitly. Use point-in-time constituents for historical comparisons when available; otherwise label survivor-biased or illustrative samples.
@@ -64,7 +66,7 @@ Produce one integrated daily report, not separate Brief and Review outputs. Comb
 9. Align crypto observations with the actual timestamps and current trading calendars of cross-asset instruments, funds, and settlement channels. Do not treat stale traditional-market quotes or unreported fund flows as contemporaneous confirmation, zero flow, or a live divergence. Verify daylight saving time for U.S. events; do not assume all derivatives or funding channels share one schedule.
    Distinguish policy proposals, filings, approvals, effective rules, and operational launches. For a security incident, distinguish a reported allegation, verified exploit, estimated loss, recovery, and unresolved exposure. Do not amplify unverified wallet identities or rumors as facts.
 
-10. Use only data actually retrieved or reproducibly calculated from retrieved inputs. Ground technical levels in a named instrument, timestamp, timeframe, and method; distinguish completed candles from an unfinished candle. Do not invent indicators, targets, causal contribution percentages, calibrated probabilities, or universal signal thresholds.
+10. Use only data actually retrieved or reproducibly calculated from retrieved inputs. Do not invent numerical data, valuation targets, causal contribution percentages, or calibrated probabilities.
     Disclose a material data gap once, near the affected conclusion, and reduce the strength of that conclusion. Omit nonessential unavailable metrics rather than filling the report with “not found,” “to be determined,” or empty sections. An inaccessible paid dataset is not permission to fabricate a proxy. Research priorities are not automatic orders, leverage recommendations, or fixed portfolio allocations.
 
 [III. Use the Following Output Structure]
@@ -87,7 +89,7 @@ Compare BTC, ETH, ETH/BTC, and a disclosed liquid non-stablecoin sample over the
 Where reliable, examine median returns, advancing/declining participation, the fraction outperforming BTC, concentration, spot activity, and volatility. Distinguish absolute gains from merely outperforming a falling market.
 
 Identify broad demand, BTC-led concentration, selective rotation, high-beta rebounds, liquidation-driven dislocation, or widespread de-risking. Do not declare broad altcoin expansion from a falling BTC-dominance reading or a few large gainers.
-Explain the few decisive event windows rather than narrating every hour. Use completed 1-day and 4-hour structure for context, and 1-hour observations only for useful near-term validation. Any technical level must have a retrieved basis, named instrument, timeframe, and method; one venue's wick is not automatically a market-wide break.
+Explain the few decisive event windows rather than narrating every hour. Connect observed market reactions to changes in fundamental expectations; do not infer economic delivery from a short price response alone.
 
 ## 3. Key Events, Expectation Gaps, and Price Reactions
 Select approximately 3–5 material developments, fewer when warranted. For each, explain:
@@ -116,9 +118,9 @@ Identify the cross-asset evidence that would strengthen or weaken the next-perio
 Scan the market broadly, but discuss only approximately 3–5 areas with meaningful changes in relative strength, participation, economic evidence, catalysts, or risk. Include deterioration and failed responses as well as leaders; do not force daily coverage of every sector.
 
 Present one compact table:
-Area / representative token | 24-hour and recent relative performance | Main catalyst and actual token exposure | Change in participation or phase | Next confirmation condition and horizon | Invalidation condition / main risk.
+Area / representative token | 24-hour and recent relative performance | Main catalyst and actual token exposure | Change in participation or economic evidence | Key unresolved question and horizon | Main counterevidence / risk.
 
-Distinguish trend continuation from a one-day bounce and token-holder benefits from success at the network, application, or operating-company level. A thematic label is not evidence of direct economic exposure.
+Distinguish sustained economic improvement from a one-day price response and token-holder benefits from success at the network, application, or operating-company level. A thematic label is not evidence of direct economic exposure.
 Use representatives to explain the thesis, not as a shopping list. Clarify which areas deserve continued attention, which are improving but unconfirmed, and which should receive lower priority. Do not let an intraday move settle a multiweek adoption or valuation thesis.
 
 ## 7. Review of Previous Assessments
@@ -130,17 +132,14 @@ Use these categories: supported, partially supported, invalidated, not triggered
 Assess direction, mechanism, timing, and risk warnings separately. Do not rewrite a trigger after the fact, score pre-publication price action, treat an untriggered condition as a win or loss, or terminate a longer horizon merely because 24 hours have passed.
 If no earlier report is available, omit forecast scoring without asking for one. The report's retrospective market analysis and forward outlook must still be complete.
 
-## 8. Next 24–72 Hours: Event Calendar and Conditional Scenarios
-List the most important events over the next 24–72 hours, plus consequential events within the next 7 calendar days. State exact UTC/Beijing times where verified, scheduling certainty, the sourced expectation or prior state, and the hypothesis each event tests.
-Include macro and policy releases, product milestones, protocol implementations, governance execution, token releases, derivatives expiries/settlements, and operational interruptions only when material. Do not assign invented clock times to uncertain milestones.
+## 8. Next 24–72 Hours: Outlook, Core Questions, and Events
+Build a substantive view around the unresolved demand, supply, adoption, token-economics, liquidity, or policy questions identified earlier. State the judgment currently best supported by evidence for the market or particular themes/assets, and explain which expectations may persist or change. Do not force a market-wide thesis when the evidence is asset-specific.
 
-Provide three scenarios: base case, stronger case, and weaker case.
-For each specify:
-Observable trigger → confirming price/participation/flow response → expected market structure and theme effects → research priority → invalidation condition → validity window.
+Use natural discussion rather than a fixed bullish/neutral/bearish grid. Identify the particular disclosure, operating development, implementation, or supply/demand observation that would materially advance each important question. Integrate assumptions, counterevidence, and reasons to revise the view where relevant, without making every item fill the same condition fields or follow fixed clock times or candle intervals. Market reactions can test pricing of the fundamental thesis, not technical signals.
 
-Explain which scenario is best supported by current evidence without assigning uncalibrated numerical probabilities. A stronger scenario needs positive confirmation, not just an absence of bad news.
-Conclude this section with 2–3 testable hypotheses for the next daily edition, each using a named asset or metric, observable condition, and explicit event window or horizon. Preserve them for later evaluation if that edition has access to this report.
-Use event reactions and the next completed 1-hour or 4-hour observation where useful; there is no universal opening auction or closing-session test. An untriggered scenario is not an instruction to enter a trade.
+List material events over the next 24–72 hours and consequential events within the next 7 calendar days. Give verified UTC/Beijing times, scheduling certainty, sourced expectations or prior state, and the question being tested. Include macro/policy releases, product or protocol implementations, governance execution, supply releases, and settlement or operational risks only when material; do not invent times for uncertain milestones.
+
+Retain the judgments worth revisiting in the next edition, with their original evidence and relevant horizon. If a view is unchanged, update only the new evidence and what remains unresolved; do not invent a fresh forecast or repeat generic daily advice. Do not assign uncalibrated probabilities. Research priorities are not instructions to enter a trade.
 
 ## 9. Risks and Final Watch Items
 Explain the leading risk through a specific trigger and transmission mechanism: weak depth, unstable leverage, token supply, stablecoin or counterparty stress, protocol incidents, correlated exposure, or event timing, according to the evidence.
@@ -151,12 +150,12 @@ Three confirmation signals for the next phase;
 The principal invalidation condition;
 One materially unresolved question or reason to wait rather than extrapolate the move.
 
-Do not repeat the event descriptions or scenario table. Research priorities are conditional observations, not immediate orders, leverage recommendations, or fixed position allocations.
+Do not repeat the event descriptions or earlier analysis. Research priorities are conditional observations, not immediate orders, leverage recommendations, or fixed position allocations.
 
 [IV. Writing Requirements]
 
 Write in Chinese, retaining necessary English tickers and identifiers. Target approximately 2,000–3,000 Chinese characters for the main text.
-Integrate review and outlook into one report: use recent evidence to explain the current state, then provide meaningful forward scenarios and validation conditions. Do not concatenate two reports or reduce the outlook to a token closing sentence.
+Integrate review and outlook into one report: use recent evidence to explain the current state, then develop a meaningful forward outlook with issue-specific observations. Do not concatenate two reports or reduce the outlook to a token closing sentence.
 Keep background brief. Daily research should privilege material new information and immediate validation over exhaustive sector catalogues or slow-moving valuation essays.
 End with one sentence answering: “What did the past 24 hours change, and what most needs confirmation over the next 24–72 hours?”
 
@@ -173,6 +172,6 @@ Review earlier hypotheses only when the actual prior report is available in the 
 
 3. Cite sources close to key figures, news facts, and evidence-based assessments. Use the platform's supported citations; when these are unavailable, provide readable source names and working source links. Never print raw internal reference IDs, tool fields, unfinished citation syntax, search placeholders, or empty “Sources” sections.
 
-4. Each paragraph should usually contain 2–5 sentences and develop one idea. Use short lists only for scenarios, event calendars, and final watch items. Explain a fact fully once; later sections should develop its implication rather than repeat the same news.
+4. Each paragraph should usually contain 2–5 sentences and develop one idea. Use short lists only for issue-specific observations, event calendars, and final watch items. Explain a fact fully once; later sections should develop its implication rather than repeat the same news.
 
 5. The section order is a research framework, not a requirement to pad the report. Shorten or omit explicitly conditional sections when there is no material evidence. Do not omit core conclusions, period definitions, main supporting and opposing evidence, or the final validation conditions. Prioritize substantive completeness over mechanical word counts while keeping the simplest readable format.
