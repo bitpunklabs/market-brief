@@ -15,18 +15,18 @@ What should be tested next week, rather than predicting a single certain directi
 
 2. If no date is specified, review the most recent trading week for which all regular trading sessions have been completed.
    If the current week is not yet complete, default to the previous full week. Produce a midweek edition only when explicitly asked for "this week to date."
-   Do not automatically treat the latest 5 trading days as a calendar trading week.
+   Define the trading week with its actual calendar dates and sessions.
 
 3. Measure weekly returns from the previous week's final regular-session close to the reviewed week's final regular-session close.
    Use the past 4 and 13 weeks as context to distinguish trend continuation from a single-week rebound.
 
 4. Place earnings reports, news, weekend events, and price changes in other markets occurring after the week's final regular-session close in "Weekend Updates."
-   Do not use after-hours news to explain earlier regular-session price action.
+   Use post-close news for updates and future analysis; regular-session attribution uses earlier public information.
    For every important quote, state the timestamp, trading-session status, any reporting delay, and the comparison baseline.
 
 5. If a historical week is specified, use only information and data vintages publicly available at the end of that review period.
    If a current update is also requested, present it separately.
-   If the next trading week has already begun when the report is generated, distinguish events that have already occurred from the outlook for the remaining sessions. Do not pretend to be making a weekend forecast.
+   If the next week has begun, distinguish observed outcomes from its future remainder.
 
 [II. Sources and Research Methods]
 
@@ -36,19 +36,19 @@ What should be tested next week, rather than predicting a single certain directi
 
 2. Compare actual results with pre-release expectations, previous readings, and revisions.
    Cite the source of consensus expectations. Keep earnings comparisons consistent in fiscal quarter, currency, and GAAP/non-GAAP basis.
-   Do not describe a result as "above expectations" without reliable expectations data.
+   Use a reliable sourced expectations comparator; otherwise label the available prior state.
 
 3. Follow this analytical chain:
    New fact → gap versus expectations → effect on growth, earnings, discount rates, or risk premia → cross-asset reaction → validation from sectors and individual stocks.
 
 4. For important explanations, also search for counterevidence and alternative mechanisms.
-   Do not mechanically apply conclusions such as "rate cuts are bullish" or "falling interest rates are bullish for technology stocks."
+   Explain the cause of policy/yield changes and the resulting growth, earnings, discount-rate or risk mechanism.
    Distinguish confirmed facts, analytical inferences, and hypotheses requiring validation.
 
 5. Keep weekly returns consistent in price-return versus total-return basis, currency, and time window.
-   Express changes in interest rates and credit spreads primarily in basis points, and do not conflate them with asset returns.
+   Express rate and credit-spread changes in basis points and asset returns in their own definitions.
    Account for the number of trading days and the statistical sample when analyzing weekly trading activity and market breadth.
-   When complete data are unavailable, do not substitute a handful of large companies for the entire market.
+   Disclose sample coverage and qualify market-wide conclusions to the available evidence.
 
 [III. Use the Following Output Structure]
 
@@ -73,7 +73,7 @@ Defensive versus high-beta exposures;
 Sector participation and the distribution of individual-stock returns.
 
 When data are available, analyze new highs and lows, participation in the trend, volatility, and trading activity.
-Specify the statistical sample. Do not mix breadth measures from different exchanges or indices.
+Specify consistent exchange/index samples for breadth comparisons.
 
 Determine whether the advance or decline represents:
 A broad-based trend;
@@ -84,7 +84,7 @@ A high-beta rebound;
 Broad-based de-risking.
 
 Explain the key turning points within the week rather than retelling each trading day.
-When reliable data are available, assess whether returns were concentrated around a small number of data releases or earnings announcements. Do not invent such a concentration without data.
+Assess event-window return concentration when matching observations and methods are available; otherwise explain key turning points qualitatively.
 
 ## 3. This Week's Key Gaps Versus Expectations
 Select 5–8 high-impact events.
@@ -111,14 +111,14 @@ Do equities, bonds, and credit markets confirm one another?
 Which divergences should reduce confidence in the assessment?
 
 High correlation does not establish a stable causal relationship.
-State the market-data source and timestamp for policy-rate path expectations. Do not treat implied pricing as a policy commitment.
-Distinguish spot VIX from VIX futures. Do not substitute bond ETF prices directly for credit spreads.
+State source/time for the implied policy path and distinguish market pricing from actual policy decisions.
+Distinguish spot VIX, VIX futures, bond ETF returns and directly measured credit spreads.
 
 When relevant, analyze how Europe, Asia, Hong Kong equities, Chinese assets, and commodities transmit demand, cost, and competitive effects to U.S. equities.
 Use comparable windows for cross-market comparisons, and present weekend changes separately.
 
 ## 5. Earnings and Validation of Industry Fundamentals
-Select companies whose results have index-level or industry-wide spillovers. Do not merely list whether EPS beat expectations.
+Select issuers with index/industry spillovers and analyze operating results, forward guidance and supply-chain consequences.
 
 As appropriate to each industry, analyze:
 Revenue, margins, orders, cash flow, business segments, capital expenditure, customer demand, and forward guidance.
@@ -128,7 +128,7 @@ The table should include:
 Company or industry | Key operating changes | Relative to expectations | Market reaction | Impact on peers and the supply chain | Questions still requiring validation.
 
 During earnings season, summarize the reported sample where useful, but state the coverage proportion, statistical cutoff, and weighting.
-Do not infer a broad improvement in market-wide earnings from a few companies beating expectations.
+Distinguish isolated earnings beats, industry improvement and broad earnings change using sample coverage.
 If there are no important earnings reports, shorten this section rather than padding the list.
 
 ## 6. Sector, Theme, and Style Rotation
@@ -146,7 +146,7 @@ Price rebounds without new earnings support;
 Moves concentrated in a few leading companies;
 Themes supported only by a narrative, without operating confirmation.
 
-Identify each theme's core beneficiaries, suppliers, customers, and competitively disadvantaged companies. Do not treat every associated company as a beneficiary.
+Identify direct beneficiaries, suppliers, customers, cost bearers and disadvantaged competitors through actual business links.
 For representative companies or ETFs, specify the relevant business exposure or coverage.
 
 ## 7. Weekend Updates, Positioning, and Trading-Related Risks
@@ -155,24 +155,23 @@ Separately list important events occurring after the final regular-session close
 For fund-flow, options, CFTC, 13F, or other positioning data, verify:
 The reference date, release date, coverage, and reporting lag.
 Changes in holdings, notional amounts, trading volume, and fund flows are different concepts.
-Do not treat 13F disclosures as that week's institutional trading. Do not infer direction solely from options volume.
-Without reliable data, do not invent dealer gamma, CTA buying or selling estimates, or the value of short covering.
+Use 13F for its reference-period holdings; options-direction interpretation requires strategy/side information beyond activity.
+Support dealer/CTA/short-covering attribution with verifiable data; qualify remaining uncertainty.
 
 Discuss the effects of expirations, rebalancing, or passive trading on the week's price action only when supported by evidence.
 
 ## 8. Outlook, Core Questions, and the Event Calendar
-Build a specific view of next week and the next 2–4 weeks around the earnings, demand, policy, financing, or valuation questions that matter most in the earlier analysis. Explain which broad-market, sector, or theme assessments remain well supported, which depend on undelivered expectations, and which new evidence warrants revision.
 
-Give the currently better-supported judgment and its mechanism. Discuss meaningful competing explanations and counterevidence within the relevant issue rather than using a fixed bullish/neutral/bearish grid. Observation priorities should identify the particular operating result, disclosure, or implementation milestone that could resolve a question, with a relevant horizon; do not repeat a generic participation or trading-session checklist.
+Build a specific view of next week and the next 2–4 weeks around the earnings, demand, policy, financing, or valuation questions raised earlier. Explain which broad-market, sector, or theme assessments remain well supported, which depend on undelivered expectations, and which new evidence warrants revision.
 
-List important data releases, policy events, Treasury auctions, earnings reports, and industry events for next week and the next 2–4 weeks. Give important times in U.S. Eastern and Beijing time, distinguish confirmed schedules from estimates, and explain which expectation each could change. If a prior thesis is unchanged, update its evidence and unresolved questions instead of inventing a new forecast.
+Give the currently better-supported judgment and its mechanism. Discuss meaningful competing explanations, assumptions, and counterevidence within the relevant issue. Identify the operating result, disclosure, or implementation milestone that could resolve a question and its relevant horizon.
 
-Do not invent precise probabilities or index targets. A sector's research priority is not an immediate buy recommendation.
+List important data releases, policy events, Treasury auctions, earnings reports, and industry events for next week and the next 2–4 weeks. Give important times in U.S. Eastern and Beijing time, scheduling certainty, and the expectation each could change. For an unchanged thesis, retain its logic and horizon and update the evidence and unresolved questions. Match judgment precision to the evidence; use research priorities to guide further validation.
 
 ## 9. Assessment Review and Final Watchlist
 If the conversation contains last week's report, review its original hypotheses, trigger conditions, and validity horizons.
 Use the following evaluation categories: supported, partially supported, invalidated, not triggered, and still awaiting validation.
-If no historical report is available, do not invent a forecasting track record.
+Review original forecasts only when the actual prior report is available; otherwise complete current review and outlook.
 
 Conclude with:
 This week's most valuable new evidence;
@@ -186,34 +185,13 @@ Write in Chinese, retaining necessary English ticker symbols and identifiers. Ta
 Lead with conclusions. Prioritize changes, mechanisms, and validation rather than accumulating news items.
 Cite sources close to key figures and facts.
 If web access is unavailable, state this clearly. When data are missing, complete the reliable portions.
-Do not ask me to provide a stock universe, market data files, or historical reports.
+Select and disclose the available market universe; user materials add context.
 End with one sentence answering: "Can this week's repricing persist, and what is the most important test of that persistence?"
 
 [Markdown and Formatting Rules]
 
-1. Use only standard Markdown in the final response. Do not output internal tool fields, search placeholders, debug text, or incomplete rich-media syntax, such as navlist, turnXsearchY, or explanations of tool output.
-
-2. Keep Markdown simple:
-   - Use `#` for the report title and `##` for main sections. As a rule, do not add deeper heading levels.
-   - Apart from headings and necessary tables, use ordinary paragraphs by default.
-   - Do not use bold, italics, blockquotes, code blocks, HTML, or decorative separators unless the content genuinely requires them.
-   - Use bullets or numbering only for short lists, issue-specific observations, event calendars, or final watch items. Prefer paragraphs whenever they work, and do not use nested lists.
-
-3. Use tables only when this prompt explicitly requires them or when they materially improve readability:
-   - Leave one blank line before and after each table. Use one record per row, with no line breaks or nested lists inside cells.
-   - Keep cells brief, prioritizing keywords and conclusions rather than long paragraphs.
-   - Avoid the vertical-bar character `|` within cell text. Use commas, slashes, or semicolons as separators instead.
-   - Do not stack multiple web links or complex citation components inside table cells. If citations interfere with table rendering, provide the relevant sources in corresponding paragraphs after the table.
-
-4. Keep sourcing and citations robust:
-   - Place sources close to key figures, news facts, and important assessments.
-   - Prefer source citations that the platform can render correctly. Do not manually construct Markdown hyperlinks by default; use ordinary links only when normal citations cannot be generated.
-   - Place citations after complete sentences, paragraphs, or table-related explanations. Do not embed citations in headings, bold syntax, or other Markdown markup.
-   - Do not output standalone, empty, or unfinished placeholder sections such as "Sources," "URLs," or "navlist."
-
-5. Prioritize readability in the main text:
-   - A paragraph should usually contain 2–5 sentences and address one core idea.
-   - When additional structure is useful, use inline labels such as "Base case:", "Confirmation conditions:", or "Main counterevidence:" rather than adding a heading for every minor point.
-   - As a rule, explain each fact fully only once. If it appears again in another section, refer back to the existing conclusion rather than repeating the explanation.
-
-6. If Markdown readability conflicts with completeness, prioritize completeness while still choosing the simplest and most reliable format.
+1. Use standard Markdown, one # title and ## main sections, with natural paragraphs.
+2. Use compact tables for substantive comparisons: blank lines around tables, one record per row, brief cells and comma/slash separators; dense sources go in adjacent prose.
+3. Cite material facts, numbers and judgment evidence nearby, using supported citations or readable source links after complete sentences or paragraphs.
+4. Develop one idea per paragraph, with short lists for observations, calendars and final priorities. Explain each fact once and develop its implications later.
+5. Prioritize substantive completeness and readable, stable formatting.
