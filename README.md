@@ -1,35 +1,28 @@
 # Market Brief Prompt
 
-生成完整市场研究 prompt 的 skill。选择并适配原始模板后，直接输出完整研究
-prompt，供模型完成研究、核验、分析、展望、撰写与自审。
+生成式市场研究 prompt skill。模型从共享研究能力、市场机制和频率职责设计
+完整任务，供同一个接收模型完成研究、分析、展望、写作与自审。
 
-后市展望围绕前文核心问题，给出具体的大盘、板块或主题判断与观察方向；
-前提和反证自然融入讨论，避免固定情景与时段清单。
-
-生成结果不附带模型选择、effort或执行配置交接说明。本仓库不包含模型客户端、
-任务分级调度或报告运行框架。
-
-入口：[skills/market-brief-prompt/SKILL.md](skills/market-brief-prompt/SKILL.md)。
-安装时复制整个 `skills/market-brief-prompt/` 目录，包括模板资源。
-
-例如：
+入口：[SKILL.md](skills/market-brief-prompt/SKILL.md)。复制整个
+`skills/market-brief-prompt/` 目录即可安装。
 
 ```text
-$market-brief-prompt 生成 A股盘前研究 prompt。
-$market-brief-prompt 生成美股周度复盘 prompt，重点关注财报和利率。
-$market-brief-prompt 生成2026年9月的Crypto月度复盘prompt，只使用月末前公开的信息。
+$market-brief-prompt 生成A股盘前研究prompt。
+$market-brief-prompt 生成美股周度prompt，重点分析财报和利率。
+$market-brief-prompt 生成2026年9月Crypto月度prompt，仅使用月末前公开信息。
+$market-brief-prompt 优化这份旧prompt，保留研究深度并简化重复指令。
 ```
 
-支持A股、美股的盘前/盘后/周度/月度，以及Crypto的日报/周度/月度，共11种。
-报告默认语言沿用原始模板，全部为中文；明确要求其他语言时统一调整。
-未给日期或截止时，保留由执行模型在运行时核验的规则。
+CN、US支持盘前/盘后/周度/月度；Crypto支持日报/周度/月度。默认报告中文。
+其他市场先用官方资料建立制度画像，再复用共享能力与相应频率。
 
-`initial-prompts/` 维护从最初11份prompt演进的源模板，原版本保存在Git历史；
-skill内的 `assets/prompts/` 是相同模板的可移植副本，维护时同步两处。
-生成时完整保留研究方法、时间边界、市场
-专属内容、章节、反证和后市展望，只按明确要求适配。
+`references/` 是生成规则主体；`assets/prompts/` 的11份手写prompt作为对照组，
+`initial-prompts/` 保留相同仓库副本。生成独立起草，比较时再检验实质职责得失。
+
+后市展望围绕研究中的核心未决问题形成具体判断、机制和观察方向。输出采用正向
+任务要求，时间与行情在执行时核验。模型与effort在执行环境配置。
 
 [功能设计](design-docs/market-brief-skill-design.md)与
-[技术设计](design-docs/market-brief-skill-architecture.md)描述当前prompt生成架构。
-原有任务分级、研究helper、运行记录契约及其测试已撤回；之前的实验结果仍在
-忽略的 `temp/` 中，供历史对照，不作为当前功能。
+[技术设计](design-docs/market-brief-skill-architecture.md)说明模块、生成、维护与演进。
+生成样例、比较和迭代保存在忽略的 `temp/`。本地prompt覆盖检查与实际研究报告质量
+分开验收。项目保持一个skill与Markdown资源，无需模型客户端或调度服务。

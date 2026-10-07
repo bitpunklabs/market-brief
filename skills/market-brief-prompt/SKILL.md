@@ -1,70 +1,88 @@
 ---
 name: market-brief-prompt
-description: Generate a complete, fundamentals-focused market research prompt for CN equities, U.S. equities, or Crypto using the premarket, postmarket, daily, weekly, and monthly templates. Use when the user wants a market-brief prompt to hand to a research model.
+description: Design, generate, or upgrade a complete market-brief research prompt from reusable research capabilities, market mechanisms, and cadence requirements. Use for CN, US, Crypto, or adapting this methodology to another specified market.
 ---
 
 # Market Brief Prompt
 
-Produce the complete research prompt. The receiving model performs the whole
-research task, including browsing, verification, analysis, outlook, writing and
-self-review. This skill generates instructions; it does not research the market
-or generate the report during prompt preparation.
+Deliver a self-contained research prompt that a receiving model can execute as
+one integrated research task. This skill delivers the prompt; market research
+and the resulting report happen at execution time.
 
-## Select the original template
+## Understand the request
 
-Resolve the market and cadence from the request or clear conversation context.
-Ask only when either is missing or conflicting. Read only the selected file:
+Resolve market, cadence, and any explicit date/period, cutoff, focus, restricted
+coverage, language, prior-report material, or destination. Ask for a missing or
+conflicting essential choice; preserve supplied values exactly. Default reports
+to Chinese. A focus adds depth; restricted coverage changes the universe.
+Unspecified dates retain execution-time resolution rules.
 
-| Market | Cadence | Template |
+For an upgrade, read the supplied prompt and identify its research obligations
+before redesigning it. User requirements take precedence over defaults.
+
+## Read the relevant capabilities
+
+Read [research capabilities](references/research.md) and the selected sections of
+[cadence requirements](references/cadences.md), then the relevant market profile:
+
+| Market | Profile | Default cadences |
 | --- | --- | --- |
-| CN / A股 | premarket / 盘前 | [A股盘前](assets/prompts/A股盘前prompt.md) |
-| CN / A股 | postmarket / 盘后 | [A股盘后](assets/prompts/A股盘后prompt.md) |
-| CN / A股 | weekly / 周度 | [A股周度](assets/prompts/A股周度复盘prompt.md) |
-| CN / A股 | monthly / 月度 | [A股月度](assets/prompts/A股月度复盘prompt.md) |
-| US / 美股 | premarket / 盘前 | [美股盘前](assets/prompts/us-premarket-prompt.md) |
-| US / 美股 | postmarket / 盘后 | [美股盘后](assets/prompts/us-postmarket-prompt.md) |
-| US / 美股 | weekly / 周度 | [美股周度](assets/prompts/us-weekly-review-prompt.md) |
-| US / 美股 | monthly / 月度 | [美股月度](assets/prompts/us-monthly-review-prompt.md) |
-| Crypto / 加密资产 | daily / 日报 | [Crypto日报](assets/prompts/crypto-daily-brief-prompt.md) |
-| Crypto / 加密资产 | weekly / 周度 | [Crypto周度](assets/prompts/crypto-weekly-review-prompt.md) |
-| Crypto / 加密资产 | monthly / 月度 | [Crypto月度](assets/prompts/crypto-monthly-review-prompt.md) |
+| CN / A股 | [CN](references/markets/cn.md) | premarket, postmarket, weekly, monthly |
+| US / 美股 | [US](references/markets/us.md) | premarket, postmarket, weekly, monthly |
+| Crypto | [Crypto](references/markets/crypto.md) | daily, weekly, monthly |
 
-These are the eleven supported combinations. Do not silently map unsupported
-markets or cadences to one of them. All original templates request Chinese
-reports, including templates whose instructions are written in English.
+These resources define research responsibilities and correctness conditions,
+not prose fragments or a fixed report outline. Select, integrate, and express
+them for the actual task. Keep the substantive obligations of the chosen market
+and cadence even when changing the organization or wording.
 
-## Prepare the complete prompt
+For another specified market, follow the adaptation procedure in
+[evaluation and evolution](references/evaluation.md). Ground exchange, calendar,
+currency, benchmarks, disclosures, policy transmission, and market rules in
+institutional sources before generating a tailored prompt.
 
-Preserve the selected template's research depth, output structure, source rules,
-time boundaries, counterevidence and substantive outlook. Return its full body,
-not a summary, a link to the template, a plan or empty section headings.
+## Design and write
 
-Build the outlook around material questions raised earlier and the
-best-supported judgments for the market, sectors or themes.
-Use concrete, issue-specific observation priorities and discuss assumptions or
-reasons to revise naturally. Do not impose scenario grids, identical condition
-fields or fixed intraday checkpoints. Unchanged views
-need updates to evidence and unresolved questions, not repeated generic prose.
+Choose a coherent research objective, information boundary, and report structure.
+Build sections around what the receiving model must determine and the evidence
+needed to do so. Integrate shared requirements once, then deepen the selected
+market and cadence. Define required outcomes while giving the model discretion
+over research tools, ordering, and effort allocation.
 
-Add a short request-specific preamble only for the supplied date/period, cutoff,
-focus, restricted scope, language, prior-report materials or output destination.
-Keep supplied values exact. A focus adds emphasis; an explicit restricted scope
-changes coverage. Do not invent prior reports, current facts or market data.
-If a requested language differs, update the template's language/length rules
-consistently rather than leaving conflicting instructions in the preamble.
+Write a complete new prompt rather than returning module names or concatenating
+reference text. Use affirmative instructions: state the desired analysis,
+eligible data, correct calculation, or treatment of uncertainty. Preserve data
+distinctions and information boundaries through precise positive requirements.
 
-When date or cutoff is unspecified, retain the template's execution-time defaults.
-The receiving model must verify actual time, exchange calendars and daylight
-saving time when it runs. Do not bake the prompt-generation timestamp or an
-assumed trading date into a reusable prompt. Preserve historical-information
-boundaries when a historical period is requested.
+Develop the outlook from material unresolved questions in the preceding research:
+the best-supported view, mechanism, priced expectations, and evidence that could
+advance or revise it. Express observations and horizons naturally for each issue.
+Maintain an unchanged thesis through updates to evidence and unresolved questions.
 
-Remove technical-analysis content without adding scope or exclusion statements.
-Output only the complete research prompt. Do not prepend model-selection,
-reasoning-effort or execution-configuration handoff instructions.
+Use execution-time instructions for actual time, calendars, current rules, data,
+and sources. Prompt preparation supplies the research design; current findings
+are established by the receiving model. Capability-specific guidance is useful
+when the user supplies execution constraints. Keep model names, effort settings,
+and configuration handoffs in the execution environment.
 
-Check the prompt for conflicting parameters, omitted template sections,
-unresolved placeholders and accidental shortening before delivery. Output the
-ready-to-copy prompt directly; save it as UTF-8 Markdown when a destination is
-requested. Generating a prompt does not authorize running it, scheduling it or
-publishing its future report.
+## Review and deliver
+
+Check the draft against the semantic acceptance criteria in
+[evaluation and evolution](references/evaluation.md). Revise lost obligations,
+parameter conflicts, ambiguous endpoints, repetitive instructions, and unsupported
+assumptions. Keep essential research depth ahead of brevity.
+Express material data distinctions operationally: what the observation measures,
+which additional evidence a stronger inference needs, and how periods or units align.
+
+`assets/prompts/` contains the eleven hand-written controls. For a supported
+combination with a control, read it after drafting to audit substantive
+responsibilities before delivery. Repair material losses while preserving the
+new prompt's coherent design. Compare meaning rather than headings or wording.
+Generation starts from capability references; controls enter during review.
+
+Output the complete ready-to-copy prompt, or save UTF-8 Markdown at the requested
+destination. Evaluation notes are separate artifacts when requested.
+
+For requested skill/model upgrades, use the evidence-driven revision procedure
+in the evaluation reference. The current host model performs prompt design;
+changes are accepted on observed results, with limitations stated explicitly.
