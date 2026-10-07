@@ -1,11 +1,10 @@
 # Market Brief Prompt
 
-生成完整市场研究 prompt 的 skill。选择并适配原始模板后，把整段 prompt
-交给执行端可用的最高能力研究模型，以该模型支持的最高 reasoning effort
-完成整份报告。研究、核验、分析、展望、撰写与自审共享同一上下文。
+生成完整市场研究 prompt 的 skill。选择并适配原始模板后，直接输出完整研究
+prompt，供模型完成研究、核验、分析、展望、撰写与自审。
 
-本项目的交付物是 prompt。模型与 effort 在执行端设置；prompt 文本不能替
-宿主切换配置。本仓库不包含模型客户端、任务分级调度或报告运行框架。
+生成结果不附带模型选择、effort或执行配置交接说明。本仓库不包含模型客户端、
+任务分级调度或报告运行框架。
 
 入口：[skills/market-brief-prompt/SKILL.md](skills/market-brief-prompt/SKILL.md)。
 安装时复制整个 `skills/market-brief-prompt/` 目录，包括模板资源。

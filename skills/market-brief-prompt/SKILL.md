@@ -52,13 +52,8 @@ saving time when it runs. Do not bake the prompt-generation timestamp or an
 assumed trading date into a reusable prompt. Preserve historical-information
 boundaries when a historical period is requested.
 
-State the execution requirement in the handoff: the host should select its
-highest-capability available research model and that model's highest supported
-reasoning effort for the entire report. Use one model with the whole prompt and
-context; do not split responsibilities into model tiers or delegated workers.
-Model selection is a host setting, not something prompt text can enforce. Do
-not claim that the settings were applied or silently substitute a weaker setup.
-If the user names a model/configuration explicitly, preserve that instruction.
+Output only the complete research prompt. Do not prepend model-selection,
+reasoning-effort or execution-configuration handoff instructions.
 
 Check the prompt for conflicting parameters, omitted template sections,
 unresolved placeholders and accidental shortening before delivery. Output the
