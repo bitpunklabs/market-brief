@@ -1,38 +1,32 @@
-# Market Brief
+# Market Brief Prompt
 
-可移植市场研究 skill：宿主 agent 完成检索、核验、分析与报告交付；一个
-Python 标准库 helper 处理时间窗口、收益复算和研究记录检查。无模型客户端、
-数据库或常驻服务。
+生成完整市场研究 prompt 的 skill。选择并适配原始模板后，把整段 prompt
+交给执行端可用的最高能力研究模型，以该模型支持的最高 reasoning effort
+完成整份报告。研究、核验、分析、展望、撰写与自审共享同一上下文。
 
-当前是第一批本地实现。CN/US/Crypto 的 11 个原始任务已登记，研究规则按
-资产、市场、频率加载；尚未安装到宿主，也未完成真实联网报告或模型配置应用验收。
-原始 prompt 保留在 `initial-prompts/`，设计与架构在 `design-docs/`。
+本项目的交付物是 prompt。模型与 effort 在执行端设置；prompt 文本不能替
+宿主切换配置。本仓库不包含模型客户端、任务分级调度或报告运行框架。
 
-## 开发与使用
+入口：[skills/market-brief-prompt/SKILL.md](skills/market-brief-prompt/SKILL.md)。
+安装时复制整个 `skills/market-brief-prompt/` 目录，包括模板资源。
 
-Python 3.11+，需要系统 IANA 时区数据；helper 无第三方依赖。
+例如：
 
-```sh
-python3 -m unittest discover -s tests -v
-python3 skills/market-brief/scripts/brief.py resolve tests/fixtures/crypto-daily/request.json
-python3 skills/market-brief/scripts/brief.py check tests/fixtures/crypto-daily/run.json --brief tests/fixtures/crypto-daily/brief.md
+```text
+$market-brief-prompt 生成 A股盘前研究 prompt。
+$market-brief-prompt 生成美股周度复盘 prompt，重点关注财报和利率。
+$market-brief-prompt 生成2026年9月的Crypto月度复盘prompt，只使用月末前公开的信息。
 ```
 
-fixture 是带明确标记的合成输入，用于测试契约，不是市场研究结果。
-helper 的参数、JSON 字段和状态说明见
-[记录契约](skills/market-brief/references/records.md)。退出码：0 成功、1 无效或检查失败、2 待确认。
+支持A股、美股的盘前/盘后/周度/月度，以及Crypto的日报/周度/月度，共11种。
+报告默认语言沿用原始模板，全部为中文；明确要求其他语言时统一调整。
+未给日期或截止时，保留由执行模型在运行时核验的规则。
 
-独立 skill 根目录为 [skills/market-brief](skills/market-brief/SKILL.md)；安装时复制
-整个目录到目标宿主的 skill 发现路径，不能只复制入口。运行记录保存在用户工作区，
-安装目录不写入数据。本仓库的 `runs/` 和 `temp/` 默认不提交。
+`initial-prompts/` 保留最初11份prompt原文；skill内的 `assets/prompts/` 是相同
+模板的可移植副本，维护时同步两处。生成时完整保留研究方法、时间边界、市场
+专属内容、章节、反证和后市展望，只按明确要求适配。
 
-## 实现与验收边界
-
-已实现：11 个稳定 task ID 与唯一档位表；逐步加载研究规则；给定时钟和日历的
-时间解析；复利收益与流量日均；来源版本/引用关系/数字/正文和输入哈希检查；
-请求与继承/实际执行结果分开记录。
-
-待完成：首个真实联网报告与原始材料留存；每个任务的冻结研究案例和原 prompt
-质量比较；Codex/Claude Code 宿主能力应用与回退实测；首个新增股票市场案例。
-helper 尚不解析 wtd/mtd、自定义区间和未来完整期的提前版。静态检查通过不代表
-经济判断正确、实际模型切换成功或真实交付完成。
+[功能设计](design-docs/market-brief-skill-design.md)与
+[技术设计](design-docs/market-brief-skill-architecture.md)描述当前prompt生成架构。
+原有任务分级、研究helper、运行记录契约及其测试已撤回；之前的实验结果仍在
+忽略的 `temp/` 中，供历史对照，不作为当前功能。
