@@ -2,6 +2,8 @@
 
 Apply the selected cadence and market boundary conventions. These are distinct
 research jobs; organization and section titles are design choices.
+State calendar target periods and dates for forward outlooks alongside their
+information cutoff; continuing theses retain their original validation horizons.
 
 Approximate report lengths follow the resolved language. For English, use
 1,200–1,800 words for premarket/postmarket/daily, 1,500–2,200 for weekly, and
@@ -24,6 +26,10 @@ substantive completeness takes priority over these editorial targets.
   events/risks; concise final priorities. Counts adjust to material evidence.
 - Chinese report about 2,000–3,000 characters; core summary about 200.
 
+Allocate depth to new expectation gaps and consequences for the target session.
+Material company earnings and guidance have a visible analytical home; select
+sector priorities through economic exposure and what remains unresolved.
+
 ## Postmarket — equities
 
 - Default: most recent completed regular session. Separate price/news cutoffs and
@@ -38,6 +44,10 @@ substantive completeness takes priority over these editorial targets.
   final revisions. Carry unfinished longer theses forward.
 - Separate results, guidance and preliminary after-hours information; conference-call
   status affects confidence. Chinese report about 2,000–3,000; summary about 200.
+
+Give reaction chronology, leading attributions and judgment revisions distinct
+roles. A true premarket assessment and post-close developments remain separately
+identifiable even when the report's organization changes.
 
 ## Daily — continuous Crypto
 
@@ -54,6 +64,10 @@ substantive completeness takes priority over these editorial targets.
   supply/liquidity; macro cross-checks; about 3–5 themes; actual prior assessments;
   substantive outlook/events; risks/final priorities. Slow economics deepen when changed.
 - Chinese report about 2,000–3,000 characters; summary about 200.
+
+Focus depth on material new facts and near-term validation. Select the few demand,
+leverage and supply observations that discriminate explanations; slower adoption
+and valuation research expands when evidence changes the thesis.
 
 ## Weekly
 
@@ -74,6 +88,10 @@ substantive completeness takes priority over these editorial targets.
   Crypto about 5–8); post-period updates; flows/positioning risks; substantive next-week
   and 2–4-week outlook/events; real prior report review; carry-forward judgments.
 - Chinese report about 2,500–3,500 characters; summary about 250.
+
+Synthesize full-week persistence and turning points. Conclude which sectors/themes
+merit continued research, depend on undelivered catalysts, or warrant lower
+priority. Keep weekend/post-week updates proportional to changed starting conditions.
 
 ## Monthly
 
@@ -97,3 +115,9 @@ substantive completeness takes priority over these editorial targets.
   next-month and 1–3-month outlook; real prior review; carry-forward judgment.
   Distinguish 1–2-week event effects from 1–3-month operating validation.
 - Chinese report about 3,000–4,500 characters; summary about 300.
+
+Operating delivery and valuation/embedded expectations each receive a visible,
+substantive report section or subsection. Develop independent judgments for both,
+then reconcile them in the outlook. Give demand/supply quality and systemic or
+concentration vulnerabilities explicit space where material; routine event coverage
+serves these medium-term questions.

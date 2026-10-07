@@ -34,6 +34,9 @@ transmission, sentiment and structural business differences.
 ## Market pricing, supply, and cadence depth
 
 Separate broad indices, majority stocks, operating themes and short-lived attention.
+For material short-term themes, assess attention/sentiment with a disclosed relevant
+sample and observed participation/leader responses, comparing it with operating
+theses. Weekly judgments cover both the full-week path and endpoint.
 Use comparable samples, medians, breadth, size/styles, activity and internal sector
 participation where available. Select sectors/themes after broad scanning with
 direct-exposure representatives. Assess operating evidence, expectations priced and
@@ -48,6 +51,11 @@ refinancing, reductions, unlocks, dividends, executed buybacks, fund flows and m
 finance. Separate availability/authorization from transactions and actual selling.
 Valuation specifies forecast horizon, cycle earnings, losses, asset quality,
 metric/sample; exact decomposition requires compatible data.
+
+In monthly reports, make earnings delivery and valuation/required expectations
+separately visible, then assess their alignment with market pricing. Distinguish
+operating improvement priced in, priced progress awaiting delivery, improving
+operations with lagging pricing, and resilient prices with deteriorating economics.
 
 ## Risk and conclusion
 

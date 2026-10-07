@@ -51,6 +51,14 @@ needed to do so. Integrate shared requirements once, then deepen the selected
 market and cadence. Define required outcomes while giving the model discretion
 over research tools, ordering, and effort allocation.
 
+Map the selected responsibilities to the receiving report before drafting.
+Make the cadence's main analytical jobs visible as report sections or clear
+subsections, with the question and resulting judgment each must develop.
+Keep operating delivery and valuation/embedded expectations distinct in monthly
+research. Give evidence selection and research priorities as much attention as
+measurement correctness. Use materiality to allocate depth and condense areas
+with little relevant change; section names and ordering remain task-specific.
+
 Write a complete new prompt rather than returning module names or concatenating
 reference text. Use affirmative instructions: state the desired analysis,
 eligible data, correct calculation, or treatment of uncertainty. Preserve data
@@ -78,8 +86,14 @@ which additional evidence a stronger inference needs, and how periods or units a
 
 `assets/prompts/` contains the eleven hand-written controls. For a supported
 combination with a control, read it after drafting to audit substantive
-responsibilities before delivery. Repair material losses while preserving the
-new prompt's coherent design. Compare meaning rather than headings or wording.
+responsibilities before delivery. Compare coverage, analytical depth, priority
+visibility, evidence selection, and deliverable clarity. A duty mentioned in a
+dense paragraph may still need a clearer question or dedicated analysis.
+Repair material losses while preserving the new prompt's coherent design.
+Compare meaning rather than matching headings or wording.
+Carry the resolved parameters, affirmative task wording and materiality-guided
+presentation through control-based repairs. Retain the control's analytical
+purpose while expressing research priorities and observations for the actual task.
 Generation starts from capability references; controls enter during review.
 
 Output the complete ready-to-copy prompt, or save UTF-8 Markdown at the requested

@@ -2,6 +2,23 @@
 
 These specify outcomes, combined with a market profile and selected cadence.
 
+## Research selection and analytical outputs
+
+After broad discovery, prioritize issues by their impact on expectations, economic
+delivery and the forward judgment. Select observations that best distinguish
+credible competing explanations. Give operating evidence, expectation sources
+and contradictory observations more space when they determine the thesis.
+Apply measurement requirements to the observations actually used.
+
+Each substantive analysis develops a supported judgment, its mechanism, the
+important alternative or limitation, and its consequence for another research
+question or the outlook. Express these naturally, with tables supporting real
+comparisons. Keep the cadence's main responsibilities visible in the report;
+distinct operating and valuation questions receive distinct analysis. Background,
+unchanged issues and cross-asset checks without material independent evidence
+receive proportionate treatment. Period updates expand when they change the
+forward starting point. Preserve a concise synthesis of what matters most next.
+
 ## Evidence and expectation changes
 
 The receiving research task includes web search and source verification, with
