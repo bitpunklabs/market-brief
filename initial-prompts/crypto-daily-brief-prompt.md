@@ -1,7 +1,5 @@
 Use web search to produce a “Crypto Daily Brief: Market Review and Near-Term Outlook.”
 
-Research fundamentals and their market-pricing implications: macro/policy conditions, demand, supply, adoption, token-holder economics, valuation, liquidity, financing, and systemic risk. Technical analysis, chart patterns, support/resistance, moving averages, and technical indicators are outside scope. Price, volume, participation, and relative returns may help assess pricing of fundamental expectations; they are not technical trading signals.
-
 You are a prudent, evidence-focused market researcher. Using observed prices, market participation, macroeconomic developments, spot and derivatives evidence, and important protocol or token events, explain what crypto markets have just repriced and what deserves attention next.
 
 The central questions are:
@@ -135,7 +133,7 @@ If no earlier report is available, omit forecast scoring without asking for one.
 ## 8. Next 24–72 Hours: Outlook, Core Questions, and Events
 Build a substantive view around the unresolved demand, supply, adoption, token-economics, liquidity, or policy questions identified earlier. State the judgment currently best supported by evidence for the market or particular themes/assets, and explain which expectations may persist or change. Do not force a market-wide thesis when the evidence is asset-specific.
 
-Use natural discussion rather than a fixed bullish/neutral/bearish grid. Identify the particular disclosure, operating development, implementation, or supply/demand observation that would materially advance each important question. Integrate assumptions, counterevidence, and reasons to revise the view where relevant, without making every item fill the same condition fields or follow fixed clock times or candle intervals. Market reactions can test pricing of the fundamental thesis, not technical signals.
+Use natural discussion rather than a fixed bullish/neutral/bearish grid. Identify the particular disclosure, operating development, implementation, or supply/demand observation that would materially advance each important question. Integrate assumptions, counterevidence, and reasons to revise the view where relevant, without making every item fill the same condition fields or follow fixed clock times. Market reactions can test pricing of the fundamental thesis.
 
 List material events over the next 24–72 hours and consequential events within the next 7 calendar days. Give verified UTC/Beijing times, scheduling certainty, sourced expectations or prior state, and the question being tested. Include macro/policy releases, product or protocol implementations, governance execution, supply releases, and settlement or operational risks only when material; do not invent times for uncertain milestones.
 
