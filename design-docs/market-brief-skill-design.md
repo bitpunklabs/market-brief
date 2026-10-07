@@ -1,6 +1,6 @@
 # Market Brief Skill：功能设计
 
-日期：2026-10-07。状态：设计提案；尚未实现、安装或验证真实运行。技术约定见 [技术架构](./market-brief-skill-architecture.md)。
+日期：2026-10-07。状态：设计基线；第一批 skill 规则与本地 helper 已实现，尚未安装或验证真实研究运行。实际实现与待验收范围见 [项目说明](../README.md)。技术约定见 [技术架构](./market-brief-skill-architecture.md)。
 
 ## 1. 目标与最小闭环
 
