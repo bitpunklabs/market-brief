@@ -25,6 +25,9 @@ assets/prompts, in this agent's personal skills directory. Confirm the
 skill is discoverable.
 ```
 
+Prefer a download? Get the ZIP from [Releases](https://github.com/bitpunklabs/market-brief/releases/latest),
+unzip it, and ask your agent to install the complete `market-brief` folder.
+
 Start a new conversation after installation. If the skill does not appear, restart
 the agent. Fresh market research needs web search and source access; the skill
 itself has no Python, API key, or package-installation requirement.
