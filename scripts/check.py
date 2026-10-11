@@ -3,7 +3,6 @@
 import re
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
-from xml.etree import ElementTree
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCUMENTS = (
@@ -16,7 +15,7 @@ LINK = re.compile(r"\[[^\]\n]+\]\(([^)\n]+)\)")
 def package_files(root=ROOT):
     """Use an explicit boundary; local runs and GitHub configuration stay out."""
     paths = [root / name for name in DOCUMENTS]
-    paths += [root / "agents/openai.yaml", root / "assets/demo-placeholder.svg"]
+    paths += [root / "agents/openai.yaml"]
     paths += sorted((root / "assets/prompts").glob("*.md"))
     paths += [root / "scripts/check.py", root / "scripts/package_release.py"]
     demo = root / "assets/demo.gif"
@@ -92,8 +91,6 @@ def check(root=ROOT):
     if "$market-brief" not in ui:
         errors.append("UI default prompt must invoke $market-brief")
 
-    svg = root / "assets/demo-placeholder.svg"
-    ElementTree.parse(svg)
     for source in re.findall(r'<img\b[^>]*\bsrc="([^"]+)"', readme):
         if not urlsplit(source).scheme and not (root / source).is_file():
             errors.append(f"Missing README image: {source}")
@@ -109,6 +106,6 @@ if __name__ == "__main__":
 
     try:
         print(json.dumps(check()))
-    except (ValueError, OSError, ElementTree.ParseError) as exc:
+    except (ValueError, OSError) as exc:
         print(str(exc), file=sys.stderr)
         sys.exit(1)
