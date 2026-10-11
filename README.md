@@ -1,104 +1,118 @@
-# Market Brief Prompt
+# Market Brief
 
-Turn a market research request into a complete, ready-to-copy prompt.
+Get a researched market brief for **China A-shares, U.S. equities, or Crypto**.
+Understand what changed, why it matters, and what to watch next—with sources.
 
-A lightweight agent skill for CN equities, U.S. equities, and Crypto. It designs
-research assignments from shared capabilities, market mechanisms, and cadence
-requirements, then reviews them against hand-written controls. Each prompt gives
-the receiving model one integrated task: research, verify, analyze, develop an
-outlook, write, and self-review.
+Market Brief is a curated library of 11 research prompts, packaged as an agent
+skill. Your AI assistant does the research using the selected prompt.
 
 <p align="center">
-  <img src="assets/demo-placeholder.svg" alt="Demo placeholder: a research request becomes a reviewed, ready-to-copy prompt." width="960">
+  <img src="assets/demo-placeholder.svg" alt="Demo placeholder: ask for a market brief, research with sources, and read the review and outlook." width="960">
 </p>
 
-*Request → design and review → complete research prompt.*
+*Ask → research → brief. Demo recording coming soon.*
 
 <!-- DEMO PLACEHOLDER
-Replace the image source above with assets/demo.gif when the recording is ready.
-Storyboard: a 12-second loop, 1200 × 600, readable at 960 px, with a still opening frame.
-0–3s: enter "$market-brief-prompt Generate a U.S. monthly research prompt."
-3–8s: show the generated assignment's time boundaries, earnings, and valuation tasks.
-8–12s: scroll to the issue-driven outlook and copy the complete Markdown prompt.
-Use a real generation recording; the demo ends at prompt delivery.
+Replace assets/demo-placeholder.svg with assets/demo.gif when ready.
+Record a 12-second loop at 1200 × 600, readable at 960 px:
+0–3s: "$market-brief Review last week's U.S. equity market."
+3–8s: show source checks and the report's date/cutoff.
+8–12s: show the key conclusions, earnings analysis, and next week's outlook.
+Use an actual run; the placeholder does not claim a completed demo.
 -->
 
-## Quick start
+## Start here
 
-Use an agent that can load skills and read local Markdown files. For Codex, copy
-the entire skill folder from this repository's root into your personal skills
-directory:
+### Copy and paste — no installation
 
-```sh
-mkdir -p "$HOME/.agents/skills"
-cp -R skills/market-brief-prompt "$HOME/.agents/skills/"
-```
+1. Choose a prompt from the table below and open its file.
+2. Click **Copy raw file** in GitHub's file toolbar.
+3. Paste the full text into an AI assistant with web search enabled and send it.
 
-For a project-specific installation, use that project's `.agents/skills/`
-directory instead. See the [official Codex skills guide](https://learn.chatgpt.com/docs/build-skills#where-codex-loads-local-skills)
-for discovery details.
-
-Ask the agent to generate or upgrade a prompt:
+For a specific date, language, or focus, add a sentence before the prompt:
 
 ```text
-$market-brief-prompt Generate a CN premarket research prompt.
-$market-brief-prompt Generate a U.S. weekly prompt focused on earnings and interest rates.
-$market-brief-prompt Generate a September 2026 Crypto monthly prompt using only information public before 2026-10-01 00:00 UTC.
-$market-brief-prompt Upgrade the prompt below, preserving its research depth and simplifying repeated instructions.
+Review last week's U.S. equities. Write in Chinese and give extra attention to earnings.
 ```
 
-Specify a date or period, information cutoff, focus, coverage restriction, language,
-or Markdown destination when needed. A focus adds depth; a restriction changes
-the research universe. Unspecified dates are resolved when the prompt is executed.
+If you leave the date out, the prompt tells the assistant how to choose the relevant
+session or completed period. Attach an earlier brief if you want to compare with it.
 
-The output is a self-contained prompt. Run it with a model that has web research
-and source-verification tools to produce a current market report. Model and effort
-settings belong in the execution environment.
+### Use as a skill
 
-## Supported markets
+Download this repository with **Code → Download ZIP** and unzip it. In Codex, open
+the extracted folder and send:
 
-| Market | Cadences | Default prompt and report language |
-| --- | --- | --- |
-| CN equities | Premarket, postmarket, weekly, monthly | Chinese |
-| U.S. equities | Premarket, postmarket, weekly, monthly | English |
-| Crypto | Daily, weekly, monthly | English |
+```text
+Install the market-brief skill from this folder into my personal skills directory.
+Copy the complete folder, including assets/prompts.
+```
 
-Explicit language requests override these defaults. Other markets require an
-institutional profile grounded in official sources before prompt generation.
+Then start a new conversation and ask:
 
-## How it works
+```text
+$market-brief Prepare a China A-share premarket brief.
+$market-brief Review last week's U.S. equity market, focusing on earnings.
+$market-brief Give me a Crypto Daily Brief in Chinese.
+```
 
-1. Resolve the request and read the relevant research, cadence, and market resources.
-2. Design a complete assignment with visible analytical priorities and evidence requirements.
-3. Review the draft against semantic acceptance criteria and the matching hand-written control; repair material losses before delivery.
+Codex's personal skills folder is `~/.agents/skills/`. If the skill does not appear,
+restart Codex. Other skill-capable assistants can load this folder using their own
+installation instructions. See the [official Codex skills guide](https://learn.chatgpt.com/docs/build-skills#where-codex-loads-local-skills).
 
-The outlook follows the research's unresolved questions: the best-supported view,
-its mechanism, priced expectations, and evidence that would advance or revise it.
-Time, calendars, current rules, and market data are verified during execution.
+<details>
+<summary>Command-line installation</summary>
 
-The package contains one [skill entry point](skills/market-brief-prompt/SKILL.md),
-[shared research capabilities](skills/market-brief-prompt/references/research.md),
-[cadence requirements](skills/market-brief-prompt/references/cadences.md),
-[market profiles](skills/market-brief-prompt/references/markets/), and
-[11 hand-written controls](skills/market-brief-prompt/assets/prompts/).
-All runtime resources live inside the skill folder; the project has no client,
-database, or scheduler dependency.
+```sh
+git clone https://github.com/bitpunklabs/market-brief.git ~/.agents/skills/market-brief
+```
 
-## Status and evaluation
+For a project-only installation, use `.agents/skills/market-brief` in that project.
+Choose one installation location to avoid duplicate entries. `main` tracks development;
+use a reviewed release tag or commit when you need a fixed version.
 
-Early preview. Local evaluation records cover 11 market/cadence combinations,
-two parameter cases, and two fresh-context generations, with revisions against
-the controls. These are prompt-text evaluations; report quality remains to be
-tested with matched market, date, cutoff, source access, and model settings.
+</details>
 
-Evaluation artifacts currently live in the ignored `temp/` directory and are
-not included in a fresh checkout. See the
-[evaluation criteria](skills/market-brief-prompt/references/evaluation.md) for the
-acceptance method. A published evaluation sample and a license are pending.
+## Choose your brief
 
-## Contributing
+| Market | Before trading | After trading / daily | Weekly review | Monthly review | Default language |
+| --- | --- | --- | --- | --- | --- |
+| China A-shares | [Premarket](assets/prompts/A股盘前prompt.md) | [Postmarket](assets/prompts/A股盘后prompt.md) | [Weekly](assets/prompts/A股周度复盘prompt.md) | [Monthly](assets/prompts/A股月度复盘prompt.md) | Chinese |
+| U.S. equities | [Premarket](assets/prompts/us-premarket-prompt.md) | [Postmarket](assets/prompts/us-postmarket-prompt.md) | [Weekly](assets/prompts/us-weekly-review-prompt.md) | [Monthly](assets/prompts/us-monthly-review-prompt.md) | English |
+| Crypto | — | [Daily](assets/prompts/crypto-daily-brief-prompt.md) | [Weekly](assets/prompts/crypto-weekly-review-prompt.md) | [Monthly](assets/prompts/crypto-monthly-review-prompt.md) | English |
 
-Keep shared research responsibilities, cadence rules, and market semantics in
-their respective resources. Preserve coverage, depth, evidence selection, and
-deliverable clarity when simplifying instructions. Compare affected prompts with
-the controls and record limitations alongside evaluation results.
+Ask in your own words. Specify a date or period, information cutoff, language,
+focus, or watchlist when needed. A focus adds attention; say **only** if you want
+to restrict coverage. You can also ask the assistant to save the brief as a Markdown file.
+
+## What you get
+
+A complete brief with key conclusions, market and sector analysis, relevant
+company or protocol developments, an outlook, and events or risks to watch.
+The report states its time boundaries and cites important facts and figures.
+The selected prompt determines the detail appropriate to its market and period.
+
+You can also ask `$market-brief Show me the U.S. weekly prompt` to export it.
+
+## What you need
+
+An AI assistant with web search and access to sources. The skill has no runtime
+package installation, API key setup, or Python requirement of its own; your
+assistant may require an account or paid plan.
+
+Data access and model capability affect results. Missing data should be identified
+in the brief. Without web access, the assistant can export prompts or provide
+clearly labeled non-current analysis. Historical briefs use information available
+by the requested cutoff. These are research briefs, not investment advice.
+
+## Help and improvements
+
+If something is wrong, [open an issue](https://github.com/bitpunklabs/market-brief/issues).
+Include your request, assistant, relevant report excerpt, and the source that shows
+the problem. Remove private information before sharing.
+
+The prompts in [`assets/prompts/`](assets/prompts/) are the single maintained source.
+Normal use leaves them unchanged. Improvements are reviewed as focused edits based
+on actual problems. See [Contributing](CONTRIBUTING.md) for maintenance and release checks.
+
+Licensed under [MIT](LICENSE). See [changes](CHANGELOG.md) and [security reporting](SECURITY.md).
