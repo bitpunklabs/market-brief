@@ -1,6 +1,6 @@
 ---
 name: market-brief
-description: Produce evidence-based market briefs for China A-shares, U.S. equities, and Crypto using the packaged research prompts. Use for premarket, postmarket, daily, weekly, or monthly research, exporting a prompt, or explicitly maintaining this prompt library.
+description: Produce evidence-based market briefs using complete research prompts for China A-shares, U.S. equities, and Crypto, and adapt them to other equity markets. Use for premarket, postmarket, daily, weekly, or monthly research, prompt export, market adaptation, or explicit prompt-library maintenance.
 license: MIT
 metadata:
   version: "0.1.0"
@@ -18,7 +18,8 @@ Ask a short question if either essential choice remains ambiguous. Preserve expl
 dates, periods, information cutoffs, focus, coverage restrictions, language, prior
 reports, and output destinations. A focus adds depth; a restriction changes coverage.
 
-Read only the matching prompt, using paths relative to this skill's directory:
+For a listed market and cadence, read only the matching prompt, using paths relative
+to this skill's directory:
 
 | Market | Cadence | Prompt |
 | --- | --- | --- |
@@ -34,8 +35,11 @@ Read only the matching prompt, using paths relative to this skill's directory:
 | Crypto | Weekly / 周度 | [Crypto weekly](assets/prompts/crypto-weekly-review-prompt.md) |
 | Crypto | Monthly / 月度 | [Crypto monthly](assets/prompts/crypto-monthly-review-prompt.md) |
 
-For an unsupported market or cadence, explain the available choices. A new library
-entry requires an explicit adaptation or maintenance request.
+For another equity market, read [Market adaptation](references/market-adaptation.md)
+and the closest compatible Asset prompt. A request for that market's brief or prompt
+authorizes a one-off adaptation; it does not add a library entry. For an unsupported
+cadence or asset class, resolve the research window or assignment before proceeding;
+do not silently substitute an existing report type.
 
 ## Produce the brief
 
@@ -45,7 +49,7 @@ to this execution without rewriting the library prompt. Explicit user requiremen
 override prompt defaults. Resolve unspecified dates and actual market calendars at
 research time according to the prompt.
 
-Default report language: Chinese for A-shares, English for U.S. equities and Crypto.
+Default report language: Chinese for A-shares, English for all other markets.
 An explicit language request overrides this default. Use the prompt's time windows,
 source requirements, evidence distinctions, outlook, and self-review instructions.
 Only use prior reports actually available in the authorized context.
@@ -59,14 +63,20 @@ the prompt directs; distinguish non-current analysis from a current market brief
 
 When the user asks for the prompt rather than the brief, return the selected file
 verbatim by default. For a customized prompt, preserve its body and add explicit
-task parameters; change conflicting clauses only where needed. Deliver the complete
-ready-to-copy prompt or save it at the requested destination. Keep the library intact.
+task parameters; change conflicting clauses only where needed. For another market,
+follow the adaptation guide and return a complete standalone prompt, resolving
+source-market clauses in its body. Deliver the ready-to-copy prompt or save it at
+the requested destination. Keep the library intact.
 
 ## Maintain the library
 
 Modify library files only for an explicit maintenance request. Inspect the affected
 prompt and any supplied report evidence first. Distinguish an execution mistake
 from a prompt defect; make the smallest justified correction.
+
+For an explicit request to add a market permanently, follow the adaptation guide's
+library procedure. Keep the new prompt complete and independently usable; register
+it in the selection table and README. Ordinary adaptations stay outside the library.
 
 Preserve research coverage, depth, information boundaries, measurement distinctions,
 and deliverable clarity. Keep each prompt independently usable. Check the affected

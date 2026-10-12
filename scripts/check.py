@@ -8,6 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DOCUMENTS = (
     "SKILL.md", "README.md", "LICENSE", "CHANGELOG.md",
     "CONTRIBUTING.md", "SECURITY.md", "AGENTS.md",
+    "references/market-adaptation.md",
 )
 LINK = re.compile(r"\[[^\]\n]+\]\(([^)\n]+)\)")
 
@@ -60,8 +61,8 @@ def check(root=ROOT):
         errors.append("Changelog must contain the current skill version")
 
     prompts = sorted((root / "assets/prompts").glob("*.md"))
-    if len(prompts) != 11:
-        errors.append(f"Expected the 11 supported prompts, found {len(prompts)}")
+    if not prompts:
+        errors.append("Prompt library must contain at least one complete prompt")
     routes = [target for target in LINK.findall(skill) if target.startswith("assets/prompts/")]
     expected = {path.relative_to(root).as_posix() for path in prompts}
     if len(routes) != len(expected) or set(routes) != expected:

@@ -1,7 +1,8 @@
 # Market Brief
 
 An agent skill for source-backed market briefs across **China A-shares, U.S. equities,
-and Crypto**. A curated library of 11 complete research prompts, ready to use.
+and Crypto**, with adaptation to other equity markets. A curated library of 11
+complete research prompts, ready to use.
 
 [![ci](https://github.com/bitpunklabs/market-brief/actions/workflows/ci.yml/badge.svg)](https://github.com/bitpunklabs/market-brief/actions/workflows/ci.yml)
 [![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
@@ -58,6 +59,7 @@ directory. See the [official Codex guide](https://learn.chatgpt.com/docs/build-s
 $market-brief Prepare a China A-share premarket brief.
 $market-brief Review last week's U.S. equity market, focusing on earnings.
 $market-brief Give me a Crypto Daily Brief in Chinese.
+$market-brief Prepare a Hong Kong equity premarket brief in Chinese.
 ```
 
 Choose a market and period. Ask in your own words; the skill selects the matching
@@ -98,6 +100,20 @@ Add your date, language, or focus before the prompt. No skill installation is ne
 You can also ask `$market-brief Show me the U.S. weekly prompt` to export it.
 The files in [`assets/prompts/`](assets/prompts/) are the single maintained source;
 ordinary brief generation leaves them unchanged.
+
+### Other markets
+
+Ask for a brief or a complete adapted prompt for another equity market, such as
+Hong Kong, Japan, or the UK. The skill starts from a compatible Asset prompt with
+the same cadence, preserves its research depth, and verifies the target market's
+calendar, sources, benchmarks, and data conventions. Other markets default to
+English; request a different language when needed. Regional requests must identify
+the exchanges and benchmark universe when these are ambiguous.
+
+One-off adaptations leave the library unchanged. To make one a permanent library
+entry, explicitly ask to add the market and cadence. Each added prompt remains
+complete and independently usable. See [Market adaptation](references/market-adaptation.md)
+for selection, local verification, and review boundaries.
 
 ## Development
 

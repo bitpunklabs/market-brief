@@ -19,6 +19,19 @@ Record the prompt version, date/cutoff, model, and source access for report comp
 Text review and offline package checks do not establish live report quality.
 Keep model-produced reports, personal inputs, and local experiments out of the release.
 
+## Adding a market
+
+Follow [Market adaptation](references/market-adaptation.md). Start from a compatible
+Asset prompt, retain its research responsibilities, and replace market-specific
+assumptions throughout the body. Add a complete prompt to `assets/prompts/` only
+when permanent library support is requested, then add its market/cadence route to
+`SKILL.md` and its link to the README. The checker discovers prompts from the asset
+directory; no separate registry or generated prompt mirror is needed.
+
+Review source-market leftovers, timing, measurement conventions, and the intended
+report or export. Keep adaptation evidence in ignored local directories and state
+which parts were verified with current sources or an executed report.
+
 ## Local checks
 
 Development utilities use Python 3.10+ and the standard library. They are not

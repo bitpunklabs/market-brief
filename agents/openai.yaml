@@ -1,4 +1,4 @@
 interface:
   display_name: "Market Brief"
-  short_description: "Research A-share, U.S. equity, and Crypto market briefs."
+  short_description: "Research market briefs; adapt prompts to other equity markets."
   default_prompt: "Use $market-brief to review last week's U.S. equity market and explain what to watch next."

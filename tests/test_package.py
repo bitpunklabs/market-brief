@@ -3,6 +3,7 @@
 import contextlib
 import hashlib
 import shutil
+import subprocess
 import sys
 import tempfile
 import unittest
@@ -26,7 +27,7 @@ class PackageTests(unittest.TestCase):
             with zipfile.ZipFile(archive) as bundle:
                 bundle.extractall(base / "extracted")
             extracted = base / "extracted/market-brief"
-            self.assertEqual(check(extracted)["prompts"], 11)
+            self.assertEqual(check(extracted)["prompts"], check()["prompts"])
             for path in package_files():
                 self.assertEqual(path.read_bytes(), (extracted / path.relative_to(ROOT)).read_bytes())
             self.assertFalse((extracted / "temp").exists())
@@ -62,7 +63,56 @@ class PackageTests(unittest.TestCase):
     def test_missing_prompt_is_rejected(self):
         with self.copied_package() as root:
             next((root / "assets/prompts").glob("*.md")).unlink()
-            with self.assertRaisesRegex(ValueError, "Expected the 11 supported prompts"):
+            with self.assertRaisesRegex(ValueError, "Skill routing must reference every prompt"):
+                check(root)
+
+    def test_new_market_requires_route_and_readme_link(self):
+        with self.copied_package() as root:
+            expected_count = check(root)["prompts"] + 1
+            prompt = root / "assets/prompts/test-equity-premarket-prompt.md"
+            # Use a real full prompt to exercise library registration, not its semantics.
+            shutil.copyfile(root / "assets/prompts/us-premarket-prompt.md", prompt)
+            with self.assertRaisesRegex(ValueError, "Skill routing must reference every prompt"):
+                check(root)
+            link = "[Test market](assets/prompts/test-equity-premarket-prompt.md)"
+            with (root / "SKILL.md").open("a", encoding="utf-8") as handle:
+                handle.write("\n| Test equity market | Premarket | " + link + " |\n")
+            with self.assertRaisesRegex(ValueError, "README must link every supported prompt"):
+                check(root)
+            with (root / "README.md").open("a", encoding="utf-8") as handle:
+                handle.write("\n" + link + "\n")
+            self.assertEqual(check(root)["prompts"], expected_count)
+            self.assertIn(prompt, package_files(root))
+            output = root / "distribution"
+            subprocess.run(
+                [sys.executable, str(root / "scripts/package_release.py"), "--output", str(output)],
+                check=True, capture_output=True, text=True,
+            )
+            with zipfile.ZipFile(next(output.glob("*.zip"))) as bundle:
+                self.assertEqual(
+                    bundle.read("market-brief/assets/prompts/" + prompt.name), prompt.read_bytes()
+                )
+                bundle.extractall(root / "extracted")
+            self.assertEqual(check(root / "extracted/market-brief")["prompts"], expected_count)
+
+    def test_empty_prompt_library_is_rejected(self):
+        with self.copied_package() as root:
+            for prompt in (root / "assets/prompts").glob("*.md"):
+                prompt.unlink()
+            with self.assertRaisesRegex(ValueError, "Prompt library must contain at least one"):
+                check(root)
+
+    def test_duplicate_prompt_route_is_rejected(self):
+        with self.copied_package() as root:
+            with (root / "SKILL.md").open("a", encoding="utf-8") as handle:
+                handle.write("\n[Duplicate](assets/prompts/us-premarket-prompt.md)\n")
+            with self.assertRaisesRegex(ValueError, "Skill routing must reference every prompt"):
+                check(root)
+
+    def test_adaptation_guide_is_required_in_package(self):
+        with self.copied_package() as root:
+            (root / "references/market-adaptation.md").unlink()
+            with self.assertRaisesRegex(ValueError, "Missing file.*market-adaptation"):
                 check(root)
 
     def test_broken_documentation_link_is_rejected(self):
